@@ -1,0 +1,4267 @@
+@font-face {
+    font-family: "bakery-webfont";
+    src: url('bakery-webfont.eot');
+    src: url('bakery-webfont.eot?#iefix') format('embedded-opentype'),
+    url('bakery-webfont.woff') format('woff'),
+    url('bakery-webfont.ttf') format('truetype'),
+    url('bakery-webfont.svg#bakery-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.st-scroll,
+.st-panel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font: normal normal normal 80px/1.4em lobster,cursive;
+    color: rgba(73,72,72,1);
+}
+.st-scroll {
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease-in-out;
+    /* Let's enforce some hardware acceleration */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+/* POSITION OF SECTIONS */
+
+.scrollTobuttonMenu1{
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.scrollTobuttonMenu2{
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.scrollTobuttonMenu3{
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    transform: translateY(-200%);
+}
+.scrollTobuttonMenu4{
+    -webkit-transform: translateY(-300%);
+    -moz-transform: translateY(-300%);
+    -o-transform: translateY(-300%);
+    -ms-transform: translateY(-300%);
+    transform: translateY(-300%);
+}
+.scrollTobuttonMenu5{
+    -webkit-transform: translateY(-400%);
+    -moz-transform: translateY(-400%);
+    -o-transform: translateY(-400%);
+    -ms-transform: translateY(-400%);
+    transform: translateY(-400%);
+}
+
+.st-panel{
+    font-size: 0.2em;
+    line-height: 1.4;
+    background-color: #F9F9F7;
+    background-position: center 0;
+    font-family: 'DrawnBody', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+}
+.st-panel > div{
+    min-height: 100%;
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 1px;
+}
+.st-panel h3{
+    font: normal normal normal 80px/1.4em lobster,cursive;
+}
+.st-panel .contentHeader{
+    left: 12%;
+    width: 756px;
+    position: absolute;
+    top: 60px;
+}
+.st-panel .subHeader{
+    left: 43%;
+    width: 470px;
+    position: absolute;
+    top: 100px;
+}
+.st-panel .contentHeader h2{
+    text-align: center;
+    /*font-size: 170px;*/
+    margin: 0;
+    /*line-height: normal;*/
+    letter-spacing: normal;
+    font: normal normal bold 160px/1.4em bakery-webfont,sans-serif;
+}
+.st-panel .contentBody{
+    top: 300px;
+    left: 8%;
+    width: 900px;
+    position: absolute;
+}
+.st-panel .contentBodyLeft,
+.st-panel .contentBodyRight,
+.st-panel .contentBodyCenter{
+    top:300px; /*top: 320px;*/
+    width: 265px;
+    position: absolute;
+    text-align: center;
+}
+.st-panel .contentBodyLeft{
+    left: 5%;
+}
+.st-panel .contentBodyRight{
+    right: 5%;
+}
+.st-panel .contentBodyCenter{
+    left: 35%;
+}
+.st-panel .contentBody p,
+.st-panel .contentBodyLeft p,
+.st-panel .contentBodyRight p{
+    text-align: center;
+    margin: 0;
+    line-height: normal;
+    letter-spacing: normal;
+    font: normal normal normal 17px/1.4em spinnaker,sans-serif;
+    color: rgba(73,72,72,1);
+}
+.st-panel .contentBodyLeft p,
+.st-panel .contentBodyRight p{
+    color: rgba(120,161,161,1);
+}
+.st-panel .contentBodyLeft p:first-of-type,
+.st-panel .contentBodyRight p:first-of-type{
+    font: normal normal normal 50px/1.4em bakery-webfont,cursive;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+#taxisHide{
+    font: normal normal normal 50px/1.4em bakery-webfont,cursive!important;
+    margin-bottom: 5px!important;
+    color: #FFFFFF!important;
+}
+.dotsLeft{
+     top: 240px;
+     left: 22%;
+     width: 19%;
+     position: absolute;
+     border-bottom: 3px dotted rgba(73, 72, 72, 0.7);
+     height: 0 !important;
+     min-height: 0 !important;
+}
+.dotsRight{
+    top: 240px;
+    left: 77%;
+    width: 5%;
+    position: absolute;
+    border-bottom: 3px dotted rgba(73, 72, 72, 0.7);
+    height: 0 !important;
+    min-height: 0 !important;
+}
+
+/* SECTION 1 */
+
+#section-1{
+    zoom: 1;
+    transition-duration: 0s;
+    background-color: #A1D6D6;
+    background-image: url("ivanyelisa2.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+}
+#section-1 .contentHeader {
+    left: 40%;
+    top: 60px;
+}
+
+/* SECTION 2 */
+
+#section-2{
+    zoom: 1;
+    transition-duration: 0s;
+    background-color:#ACE2E2; /*background-color: #A1D6D6;*/
+}
+#section-2 .contentHeader{
+    color: rgba(120,161,161,1);
+}
+#section-2 .subHeader {
+    left: 34%;
+    width: 470px;
+    position: absolute;
+    top: 105px;
+    color: #FFFFFF;
+}
+#section-2 .subHeader h3{
+    font: normal normal normal 75px/1.4em lobster,cursive;
+}
+/*#section-2 .subHeader h3{*/
+    /*/!*font: normal normal normal 75px/1.4em bakery-webfont,cursive;*!/*/
+    /*font-family: 'bakery-webfont';*/
+    /*font-size: 42px;*/
+/*}*/
+#section-2 .dotsLeft,
+#section-2 .dotsRight{
+    border-bottom: 3px dotted #FFFFFF;
+}
+#section-2 .dotsLeft{
+    left: 29%;
+    width: 4%;
+}
+#section-2 .dotsRight{
+    left: 68%;
+    width: 3%;
+}
+#section-2 .contentBodyLeft{
+    width: 30%;
+    left: 0%;
+}
+#section-2 .contentBodyRight{
+    width: 30%;
+    right: 0%;
+}
+#taxisHide{
+    display: none;
+}
+
+/* SECTION 3 */
+
+#section-3{
+    zoom: 1;
+    transition-duration: 0s;
+    background-color:#FAFFA6;/*background-color: rgb(255, 193, 214);*/
+}
+#section-3 .contentHeader{
+    color: #F9C271;/*#DE83A0;*/
+}
+#section-3 .subHeader {
+    left: 51%;
+    width: 250px;
+    position: absolute;
+    top: 105px;
+    color: #B1E2B7;
+}
+#section-3 .dotsLeft,
+#section-3 .dotsRight{
+    border-bottom: 3px dotted #B1E2B7;
+}
+#section-3 .dotsLeft{
+    left: 14%;
+    width: 37%;
+}
+#section-3 .dotsRight{
+    left: 73%;
+    width: 5%;
+}
+#section-3 .contentBodyLeft{
+    top:255px; /*top: 275px;*/
+}
+#section-3 .contentBodyLeft:nth-last-child(2){
+    top: 65%;
+}
+#section-3 .contentBodyLeft p{
+    color: #F9C271;/*#DE83A0;*/
+}
+#section-3 .contentBodyLeft .swing{
+    line-height: 45px;
+    color: #B1E2B7;
+}
+#section-3 .contentBodyCenter{
+    left: 47%;
+    height: 299px;
+    width: 475px;
+    background: #FFFFFF;
+}
+#section-3 img{
+    padding-top: 13px;
+}
+
+    /* SECTION 4 */
+
+#section-4{
+    zoom: 1;
+    transition-duration: 0s;
+    background-color: #91E0C7; /*background-color: #FFE9A0;*/
+}
+#section-4 .contentHeader{
+    top: 25px;
+    color:rgb(255, 226, 21); /*color: rgb(253, 202, 34);*/
+}
+#section-4 .subHeader{
+    left: 42%;
+    width: 470px;
+    position: absolute;
+    top: 83px;
+    color: rgba(73,72,72,1);
+}
+#section-4 .dotsLeft,
+#section-4 .dotsRight{
+    top: 225px;
+}
+#section-4 .contentBody {
+    top: 275px;
+    left: -3%;
+    width: 1100px;
+    position: absolute;
+}
+#section-4 p{
+    margin-bottom: 10px;
+}
+.font12{
+    font-size: 1.2em!important;
+}
+/* SECTION 5 */
+
+#section-5{
+    zoom: 1;
+    transition-duration: 0s;
+    background-color: #FFDA85;/*background-color: #9DBBE0;*/
+}
+#section-5 .contentHeader{
+    color: rgb(255, 147, 54);/*color: rgba(35,86,148,1);*/
+    top: 40px;
+}
+#section-5 .subHeader{
+    left: 43%;
+    width: 470px;
+    position: absolute;
+    top: 85px;
+    color: #FFFFFF;
+}
+#section-5 .dotsLeft,
+#section-5 .dotsRight{
+    border-bottom: 3px dotted #FFFFFF;
+}
+#section-5 .dotsLeft{
+    left: 27%;
+    width: 15%;
+    top: 230px;
+}
+#section-5 .dotsRight{
+    left: 64%;
+    width: 7%;
+    top: 230px;
+}
+#section-5 .contentBody{
+    top: 295px;
+    left: 5%;
+    width: 460px;
+    position: absolute;
+    background-color: rgb(255, 147, 54);
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    padding-right: 1%;
+    height: 47%;
+}
+#section-5 input,
+#section-5 select{
+    border: none;
+    height: 39px;
+    padding-left: 3%;
+    color: #6D6B6A;
+}
+#section-5 select option:first-of-type,
+#section-5 .initSelect{
+    color: #A9A9A9;
+}
+#section-5 .contentBodyCenter{
+    top: 295px;
+    left: 60%;
+    width: 330px;
+    height: 47%;
+}
+#section-5 img{
+    height: 100%;
+}
+#section-5 button{
+    width: 20%;
+    height: 11%;
+    left: 39%;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    color: #FFFFFF;
+    background: #FFDA85;
+    font: 15px sans-serif;
+    bottom: 5%;
+}
+#section-5 button:hover{
+    color: rgb(255, 147, 54);
+    background: #FFFFFF;
+}
+#section-5 iframe{
+    padding-top: 13px;
+}
+.mb18{
+    margin-bottom: 18px;
+}
+.ml5{
+    margin-left: 5%;
+}
+.mt4{
+    margin-top: 4%;
+}
+.w45{
+    width: 45%;
+}
+.w95{
+    width: 95%;
+}
+/* CAROUSEL */
+
+.carousel{
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 404px; /*padding-top: 425px;*/
+}
+.carousel ul{
+    bottom: -40px;
+}
+.slick-track > div,
+.modalLeft{
+    padding:20px 10px;
+    /*setting a width and adding overflow:hidden will clear the floats we're going to apply to figure*/
+    width:100%;
+    overflow:hidden;
+    -webkit-transition: -webkit-transform .15s linear;
+}
+/* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
+.slick-track > div:hover {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+.slick-track > div > figure,
+.modalLeft > figure{
+    float:left; /*places the images in a horizontal line*/
+    position:relative; /*allows precise positioning of the tape in step 5- see support section below for more info*/
+    /*width:200px; /*width of the images*!/*/
+    margin:0px 5px; /*space between the images*/
+    padding: 6px 8px 10px 8px; /*size of the frame*/
+    /*give the frame's background colour a gradient*/
+    background: #eee6d8; /*fallback colour for browsers that don't support gradients*/
+    background: -webkit-linear-gradient(top, #F9F3F3, #F9F3F3 20%, #F9F3F3 60%);/*background: -webkit-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);*/
+    background: -moz-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+    background: -o-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+    background: -ms-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+    background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+    /*give the Polaroids a small drop shadow*/
+    -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+    box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+    -webkit-transform:rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    -webkit-backface-visibility:hidden; /*prevent rotated text in the caption being jagged in Chrome and Safari*/
+}
+.slick-track > div:nth-child(even) > figure { /*see support section below for more info on nth-child*/
+    -webkit-transform:rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    /*because the image is rotated the opposite way, the drop-shadow needs moving to the other side of the image*/
+    -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+    box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, .75);
+}
+.slick-track > div > figure > figcaption,
+.modalLeft > figure > figcaption{
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    font-size:1.3em;
+    color: #454f40;
+    letter-spacing: 0.09em;
+}
+
+/* FONTAWESOME */
+
+.fa.fa-clock-o,
+.fa.fa-map-marker{
+    font: normal normal normal 14px/1.25 FontAwesome;
+    font-size: 30px;
+    color: #F9C271;
+}
+.fa.fa-taxi, .fa.fa-bus{
+    font: normal normal normal 14px/1.25 FontAwesome;
+    font-size: 30px;
+    color: rgba(120,161,161,1);
+}
+
+/* CAROUSEL */
+.slick-prev:before, .slick-next:before{
+    color: #5E9080 !important;
+}
+
+/* ANIMATIONS */
+.slowDown_04{
+    animation: moveDown 0.6s ease-in-out 0.4s backwards;
+}
+.slowUp_04{
+    animation: moveUp 0.6s ease-in-out 0.4s backwards;
+}
+.slowUp_07{
+    animation: moveUp 0.6s ease-in-out 0.7s backwards;
+}
+.slowUp_1{
+    animation: moveUp 0.6s ease-in-out 1s backwards;
+}
+.grow{
+    animation: growing 0.6s ease-in-out 1s backwards;
+}
+.grow_04{
+    animation: growing 0.6s ease-in-out 0.4s backwards;
+}
+.swing:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+@keyframes moveDown{
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes moveUp{
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes growing{
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/* Responsive */
+
+@media screen and (max-height: 655px) {
+    #section-3 .contentHeader h2,
+    #section-4 .contentHeader h2,
+    #section-5 .contentHeader h2{
+        font: normal normal bold 140px/1.4em bakery-webfont,sans-serif;
+    }
+    #section-3 h3,
+    #section-4 h3,
+    #section-5 h3{
+        font: normal normal normal 70px/1.4em lobster,cursive;
+    }
+    #section-3 .subHeader{
+        top: 90px;
+        left: 54%;
+    }
+    #section-4 .subHeader {
+        top: 76px;
+    }
+    #section-5 .subHeader{
+        top: 88px;
+        left: 44%;
+    }
+    #section-3 .dotsLeft{
+        left: 14%;
+        width: 40%;
+        top: 215px;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 203px;
+    }
+    #section-4 .dotsRight {
+        left: 74%;
+    }
+    #section-5 .dotsLeft{
+        left: 27%;
+        width: 16%;
+        top: 215px;
+    }
+    #section-3 .dotsRight{
+        left: 74%;
+        width: 5%;
+        top: 215px;
+    }
+    #section-5 .dotsRight{
+        left: 63%;
+        width: 7%;
+        top: 215px;
+    }
+    #section-3 .contentBodyLeft {
+        top: 37%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 65%;
+    }
+    #section-4 .contentBody {
+        top: 40%;
+    }
+    #section-4 .carousel {
+        padding-top: 38%;
+    }
+    #section-5 .contentBody {
+        top: 43%;
+    }
+    #section-2 .contentBodyCenter{
+        left: 37%;
+    }
+    #section-2 .contentBodyCenter img{
+        height: 275px;
+    }
+    #section-3 .contentBodyCenter {
+        top: 43%;
+    }
+    #section-5 .contentBodyCenter {
+        top: 43%;
+        height: 47%;
+    }
+}
+@media screen and (max-height: 625px) {
+    #section-2 .contentBodyCenter img{
+        height: 245px;
+    }
+}
+@media screen and (max-height: 610px) {
+    #section-2 .contentHeader h2,
+    #section-3 .contentHeader h2,
+    #section-4 .contentHeader h2,
+    #section-5 .contentHeader h2{
+        font: normal normal bold 120px/1.4em bakery-webfont,sans-serif;
+    }
+    #section-2 h3{
+        font: normal normal normal 60px/1.4em lobster,cursive!important;
+    }
+    #section-3 h3,
+    #section-4 h3,
+    #section-5 h3{
+        font: normal normal normal 60px/1.4em lobster,cursive;
+    }
+    #section-2 .subHeader {
+        left: 38%;
+        top: 84px;
+    }
+    #section-3 .subHeader{
+        top: 90px;
+        left: 51%;
+    }
+    #section-4 .subHeader {
+        top: 70px;
+        left: 45%;
+    }
+    #section-5 .subHeader{
+        top: 85px;
+        left: 45%;
+    }
+    #section-2 .dotsLeft {
+        top: 190px;
+        left: 35%;
+        width: 3%;
+    }
+    #section-3 .dotsLeft{
+        left: 20%;
+        width: 30%;
+        top: 195px;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 180px;
+    }
+    #section-4 .dotsLeft {
+        left: 26%;
+        width: 17%;
+    }
+    #section-4 .dotsRight {
+        left: 73%;
+        width: 4%;
+    }
+    #section-5 .dotsLeft{
+        left: 30%;
+        width: 14%;
+        top: 190px;
+    }
+    #section-2 .dotsRight {
+        top: 190px;
+        left: 65%;
+        width: 3%;
+    }
+    #section-3 .dotsRight{
+        left: 69%;
+        top: 195px;
+    }
+    #section-5 .dotsRight{
+        left: 61%;
+        top: 190px;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight{
+        top: 250px;
+    }
+    #section-2 .contentBodyCenter{
+        top: 46%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 34%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 65%;
+    }
+    #section-4 .contentBody {
+        top: 37%;
+    }
+    #section-4 .carousel {
+        padding-top: 34%;
+    }
+    #section-5 .contentBody {
+        top: 40%;
+        height: 49%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 38%;
+    }
+    #section-5 .contentBodyCenter {
+        top: 40%;
+        height: 49%;
+    }
+}
+@media screen and (max-height: 575px) {
+    #section-2 .contentHeader h2,
+    #section-3 .contentHeader h2,
+    #section-4 .contentHeader h2,
+    #section-5 .contentHeader h2{
+        font: normal normal bold 100px/1.4em bakery-webfont,sans-serif;
+    }
+    #section-2 h3{
+        font: normal normal normal 50px/1.4em lobster,cursive!important;
+    }
+    #section-3 h3,
+    #section-4 h3,
+    #section-5 h3{
+        font: normal normal normal 50px/1.4em lobster,cursive;
+    }
+    #section-2 .subHeader {
+        left: 39%;
+        top: 80px;
+    }
+    #section-3 .subHeader {
+        top: 80px;
+        left: 51%;
+    }
+    #section-4 .subHeader {
+        top: 63px;
+        left: 45%;
+    }
+    #section-5 .subHeader{
+        top: 70px;
+        left: 46%;
+    }
+    #section-2 .dotsLeft {
+        top: 168px;
+        left: 35%;
+    }
+    #section-3 .dotsLeft {
+        left: 25%;
+        width: 25%;
+        top: 165px;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 151px;
+    }
+    #section-4 .dotsLeft {
+        left: 31%;
+        width: 13%;
+    }
+    #section-4 .dotsRight {
+        left: 68%;
+    }
+    #section-5 .dotsLeft{
+        left: 34%;
+        width: 11%;
+        top: 160px;
+    }
+    #section-2 .dotsRight {
+        top: 168px;
+        left: 62%;
+    }
+    #section-3 .dotsRight {
+        left: 66%;
+        width: 3%;
+        top: 165px;
+    }
+    #section-5 .dotsRight{
+        left: 60%;
+        width: 5%;
+        top: 160px;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 38%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 43%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 31%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 62%;
+    }
+    #section-4 .contentBody {
+        top: 34%;
+    }
+    #section-4 .carousel {
+        padding-top: 32%;
+    }
+    #section-5 .contentBody {
+        top: 36%;
+        height: 52%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 35%;
+    }
+    #section-5 .contentBodyCenter {
+        top: 36%;
+        height: 52%;
+    }
+}
+@media screen and (max-height: 550px) {
+    .fa.fa-clock-o, .fa.fa-map-marker {
+        font-size: 25px;
+    }
+    #section-3 .contentBodyLeft p:first-of-type,
+    #section-3 .contentBodyRight p:first-of-type {
+        font: normal normal normal 35px/1.4em bakery-webfont,cursive;
+        margin-bottom: 5px;
+        line-height: 25px;
+    }
+    #section-3 img{
+        width: 400px;
+        height: 253px;
+    }
+    #section-4 .contentBody p{
+        font: normal normal normal 16px/1.4em spinnaker,sans-serif;
+    }
+    #section-4 .carousel {
+        padding-top: 29%;
+    }
+    #section-5 .contentBody {
+        top: 38%;
+        height: 50%;
+        width: 40%;
+    }
+    #section-5 .contentBody input{
+        height: 32px;
+    }
+    #section-3 .contentBodyCenter {
+        height: 266px;
+        width: 425px;
+        top: 37%;
+    }
+    #section-5 .contentBodyCenter {
+        top: 38%;
+        height: 50%;
+    }
+}
+@media screen and (max-height: 520px) {
+    #section-1 .contentHeader h2 {
+        font: normal normal 70px/1.4em lobster,sans-serif;
+    }
+    #section-1 .contentBody {
+        top: 38%;
+    }
+    .countdown.countdown-container{
+       display: none;
+    }
+    #section-4 .contentHeader{
+        top: 40px;
+    }
+    #section-2 .contentHeader h2,
+    #section-3 .contentHeader h2,
+    #section-4 .contentHeader h2,
+    #section-5 .contentHeader h2{
+        font: normal normal bold 75px/1.4em bakery-webfont,sans-serif!important;
+    }
+    #section-2 h3,
+    #section-3 h3,
+    #section-4 h3,
+    #section-4 h3{
+        font: normal normal normal 40px/1.4em lobster,cursive!important;
+    }
+    #section-2 .subHeader {
+        left: 42%;
+        top: 64px;
+    }
+    #section-3 .subHeader {
+        top: 66px;
+        left: 52%;
+    }
+    #section-4 .subHeader {
+        left: 46%;
+    }
+    #section-2 .dotsLeft {
+        top: 137px;
+        left: 38%;
+    }
+    #section-3 .dotsLeft {
+        left: 30%;
+        width: 22%;
+        top: 138px;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 135px;
+    }
+    #section-4 .dotsLeft {
+        left: 35%;
+        width: 10%;
+    }
+    #section-4 .dotsRight {
+        left: 65%;
+    }
+    #section-2 .dotsRight {
+        top: 137px;
+        left: 60%;
+    }
+    #section-3 .dotsRight {
+        left: 64%;
+        top: 138px;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 30%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 36%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 33%;
+    }
+    #section-4 .contentBody {
+        top: 35%;
+    }
+    #section-4 .contentBody p:last-of-type {
+        display: none;
+    }
+    #section-4 .carousel {
+        padding-top: 25%;
+    }
+    #section-5 .subHeader {
+        top: 43px;
+    }
+    #section-5 .dotsLeft,
+    #section-5 .dotsRight{
+        top: 130px;
+    }
+}
+@media screen and (max-height: 480px){
+    #section-5 .contentHeader h2{
+        font: normal normal bold 75px/1.4em bakery-webfont,sans-serif!important;
+    }
+    #section-5 h3{
+        font: normal normal normal 40px/1.4em lobster,cursive!important;
+    }
+    #section-5 .subHeader {
+        top: 56px!important;
+    }
+    #section-5 .dotsLeft {
+        top: 129px!important;
+        left: 34%!important;
+        width: 11%!important;
+    }
+    #section-5 .dotsRight {
+        top: 129px!important;
+        left: 57%!important;
+    }
+    #section-2 .contentBodyLeft, #section-2 .contentBodyRight {
+        top: 35%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 38%;
+    }
+    #section-2 .contentBodyCenter img{
+        height: 205px;
+    }
+    #section-3 img{
+        width: 324px;
+        height: 205px;
+    }
+    #section-3 .contentBodyCenter {
+        height: 219px;
+        width: 350px;
+        top: 36%;
+    }
+    .fa.fa-clock-o, .fa.fa-map-marker {
+        font-size: 20px;
+    }
+    #section-2 .contentBodyLeft p:first-of-type,
+    #section-2 .contentBodyRight p:first-of-type,
+    #section-3 .contentBodyLeft p:first-of-type,
+    #section-3 .contentBodyRight p:first-of-type {
+        font: normal normal normal 33px/1.4em bakery-webfont,cursive;
+    }
+    #section-2 .contentBody p,
+    #section-2 .contentBodyLeft p,
+    #section-2 .contentBodyRight p,
+    #section-3 .contentBody p,
+    #section-3 .contentBodyLeft p,
+    #section-3 .contentBodyRight p {
+        font: normal normal normal 15px/1.4em spinnaker,sans-serif;
+    }
+    #section-4 .contentBody p {
+        display: none;
+    }
+    #section-4 .carousel {
+        padding-top: 18%;
+    }
+    #section-5 .contentBody {
+        top: 35%!important;
+        height: 52%!important;
+    }
+    #section-5 .contentBodyCenter {
+        top: 35%!important;
+        height: 52%!important;
+    }
+}
+@media screen and (max-height: 415px){
+    #section-1 .contentHeader h2 {
+        font: normal normal 60px/1.4em lobster,sans-serif;
+    }
+    #section-1 .ribbon {
+        font: 13px 'lobster', sans-serif;
+    }
+    #section-1 .contentBody {
+        left: 45%!important;
+    }
+    .countdown-container {
+        top: 50%!important;
+    }
+    #section-2 .contentHeader,
+    #section-3 .contentHeader,
+    #section-4 .contentHeader,
+    #section-5 .contentHeader{
+        display: none!important;
+    }
+    #section-2 h3,
+    #section-3 h3,
+    #section-4 h3,
+    #section-5 h3{
+        display: none!important;
+    }
+    #section-2 .subHeader,
+    #section-3 .subHeader,
+    #section-4 .subHeader,
+    #section-5 .subHeader{
+        display: none!important;
+    }
+    #section-2 .dotsLeft,
+    #section-3 .dotsLeft,
+    #section-4 .dotsLeft,
+    #section-5 .dotsLeft{
+        display: none!important;
+    }
+    #section-2 .dotsRight,
+    #section-3 .dotsRight,
+    #section-4 .dotsRight,
+    #section-5 .dotsRight{
+        display: none!important;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 21%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 27%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 20%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 55%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 25%;
+    }
+    #section-4 .carousel {
+        padding-top: 10%;
+    }
+    #section-5 .contentBody {
+        top: 20%!important;
+        height: 60%!important;
+    }
+    #section-5 .contentBodyCenter {
+        top: 20%!important;
+        height: 60%!important;
+    }
+}
+@media screen and (max-width: 1300px) {
+    #section-4 .subHeader {
+        left: 45%;
+    }
+    #section-5 .subHeader {
+        left: 46%;
+    }
+    #section-4 .dotsLeft {
+        left: 26%;
+        width: 18%;
+    }
+    #section-5 .dotsLeft{
+        left: 28%;
+        width: 17%;
+    }
+    #section-2 .dotsRight {
+        left: 71%;
+    }
+    #section-3 .dotsRight {
+        left: 75%;
+    }
+    #section-4 .dotsRight {
+        left: 79%;
+    }
+    #section-5 .dotsRight{
+        left: 66%;
+        width: 9%;
+    }
+    #section-4 .contentBody {
+        left: -9%;
+    }
+    #section-4 .carousel {
+        padding-top: 42%;
+    }
+    #section-4 .carousel figure{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1300px) and (max-height: 610px) {
+    #section-3 .subHeader {
+        left: 54%;
+    }
+    #section-4 .subHeader {
+        left: 47%;
+    }
+    #section-5 .subHeader {
+        left: 47%;
+    }
+    #section-2 .dotsRight {
+        left: 67%;
+    }
+    #section-3 .dotsLeft {
+        left: 24%;
+    }
+    #section-3 .dotsRight {
+        left: 73%;
+    }
+    #section-4 .dotsLeft {
+        left: 30%;
+        width: 16%;
+    }
+    #section-4 .dotsRight {
+        left: 76%;
+    }
+    #section-5 .dotsLeft {
+        left: 32%;
+        width: 13%;
+    }
+    #section-5 .dotsRight {
+        left: 64%;
+        width: 6%;
+    }
+    #section-4 .carousel {
+        padding-top: 36%;
+    }
+}
+@media screen and (max-width: 1300px) and (max-height: 575px) {
+    #section-2 .subHeader {
+        left: 40%;
+    }
+    #section-2 .dotsLeft {
+        left: 36%;
+    }
+    #section-2 .dotsRight {
+        left: 65%;
+    }
+    #section-3 .dotsLeft {
+        left: 24%;
+        width: 29%;
+    }
+    #section-3 .dotsRight {
+        left: 70%;
+    }
+    #section-4 .subHeader {
+        left: 48%;
+    }
+    #section-4 .dotsLeft {
+        left: 33%;
+        width: 14%;
+    }
+    #section-4 .dotsRight {
+        left: 73%;
+    }
+    #section-4 .carousel {
+        padding-top: 34%;
+    }
+}
+@media screen and (max-width: 1300px) and (max-height: 550px) {
+    #section-4 .carousel {
+        padding-top: 31%;
+    }
+}
+@media screen and (max-width: 1300px) and (max-height: 520px) {
+    #section-2 .subHeader {
+        left: 43%;
+    }
+    #section-2 .dotsLeft {
+        left: 39%;
+    }
+    #section-2 .dotsRight {
+        left: 63%;
+    }
+    #section-3 .dotsRight {
+        left: 67%;
+    }
+    #section-4 .dotsLeft {
+        left: 37%;
+        width: 10%;
+    }
+    #section-5 .dotsLeft {
+        left: 35%;
+        width: 11%;
+    }
+    #section-4 .dotsRight {
+        left: 68%;
+    }
+    #section-5 .dotsRight {
+        left: 62%;
+    }
+    #section-4 .carousel {
+        padding-top: 26%;
+    }
+}
+@media screen and (max-width: 1300px) and (max-height: 480px) {
+    #section-4 .carousel {
+        padding-top: 18%;
+    }
+    #section-5 .subHeader {
+        left: 49%;
+    }
+    #section-5 .dotsLeft {
+        left: 40%!important;
+        width: 8%!important;
+    }
+    #section-5 .dotsRight {
+        left: 61%!important;
+        width: 4%!important;
+    }
+}
+@media screen and (max-width: 1300px) and (max-height: 415px) {
+    #section-4 .carousel {
+        padding-top: 10%;
+    }
+}
+@media screen and (max-width: 1240px) {
+    #section-2 .contentHeader {
+        left: 9%;
+    }
+    #section-4 .contentHeader {
+        left: 5%;
+    }
+    #section-3 .subHeader {
+        left: 59%;
+    }
+    #section-4 .subHeader {
+        left: 41%;
+    }
+    #section-5 .subHeader {
+        left: 48%;
+        top: 80px;
+    }
+    #section-2 .dotsLeft {
+        left: 30%;
+    }
+    #section-3 .dotsLeft {
+        left: 15%;
+        width: 44%;
+    }
+    #section-4 .dotsLeft {
+        left: 19%;
+        width: 21%;
+    }
+    #section-5 .dotsLeft {
+        left: 30%;
+        width: 16%;
+        top: 205px;
+    }
+    #section-2 .dotsRight {
+        left: 74%;
+    }
+    #section-3 .dotsRight {
+        left: 82%;
+    }
+    #section-4 .dotsRight {
+        left: 78%;
+    }
+    #section-5 .dotsRight {
+        left: 70%;
+        top: 205px;
+    }
+    #section-4 .contentBody {
+        left: -13%;
+    }
+    #section-4 .carousel {
+        padding-top: 44%;
+    }
+    #section-4 .carousel figure{
+        margin-left: 15%;
+    }
+    #section-5 .contentBodyCenter {
+        left: 65%;
+    }
+}
+@media screen and (max-width: 1240px) and (max-height: 610px) {
+    .clock-item p{
+        line-height: 5px;
+    }
+    #section-2 .subHeader {
+        left: 38%;
+    }
+    #section-3 .subHeader {
+        left: 58%;
+    }
+    #section-2 .dotsLeft {
+        left: 33%;
+        width: 4%;
+    }
+    #section-3 .dotsLeft {
+        left: 14%;
+    }
+    #section-4 .dotsLeft {
+        left: 23%;
+        width: 18%;
+    }
+    #section-5 .dotsLeft {
+        left: 36%;
+        width: 11%;
+        top: 187px;
+    }
+    #section-2 .dotsRight {
+        left: 70%;
+    }
+    #section-4 .dotsRight {
+        left: 72%;
+    }
+    #section-3 .dotsRight {
+        left: 78%;
+    }
+    #section-5 .dotsRight {
+        left: 66%;
+        top: 187px;
+    }
+    #section-4 .carousel {
+        padding-top: 39%;
+    }
+}
+@media screen and (max-width: 1240px) and (max-height: 575px) {
+    #section-2 .subHeader {
+        left: 40%;
+    }
+    #section-5 .subHeader {
+        left: 50%;
+        top: 67px;
+    }
+    #section-2 .dotsLeft {
+        left: 35%;
+    }
+    #section-2 .dotsRight {
+        left: 66%;
+    }
+    #section-3 .dotsLeft {
+        left: 25%;
+        width: 32%;
+    }
+    #section-3 .dotsRight {
+        left: 75%;
+        width: 4%;
+    }
+    #section-4 .dotsLeft {
+        left: 27%;
+        width: 14%;
+    }
+    #section-4 .dotsRight {
+        left: 67%;
+    }
+    #section-5 .dotsLeft {
+        left: 41%;
+        width: 8%;
+        top: 155px;
+    }
+    #section-5 .dotsRight {
+        left: 65%;
+        top: 155px;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 34%;
+    }
+    #section-4 .carousel {
+        padding-top: 35%;
+    }
+}
+@media screen and (max-width: 1240px) and (max-height: 520px) {
+    #section-2 .subHeader {
+        left: 43%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 29%;
+    }
+    #section-2 .dotsLeft {
+        left: 38%;
+    }
+    #section-2 .dotsRight {
+        left: 64%;
+    }
+    #section-3 .dotsLeft {
+        left: 25%;
+        width: 32%;
+    }
+    #section-3 .dotsRight {
+        left: 71%;
+    }
+    #section-4 .dotsLeft {
+        left: 33%;
+        width: 8%;
+    }
+    #section-4 .dotsRight {
+        left: 62%;
+    }
+    #section-4 .carousel {
+        padding-top: 28%;
+    }
+    #section-5 .subHeader {
+        top: 43px;
+    }
+    #section-5 .dotsLeft,
+    #section-5 .dotsRight{
+        top: 130px;
+    }
+}
+@media screen and (max-width: 1240px) and (max-height: 480px) {
+    #section-4 .dotsRight {
+        left: 63%;
+    }
+    #section-4 .dotsLeft {
+        left: 32%;
+        width: 8%;
+    }
+    #section-4 .carousel {
+        padding-top: 21%;
+    }
+    #section-5 .subHeader {
+        left: 52%;
+    }
+    #section-5 .dotsLeft {
+        left: 42%!important;
+        width: 9%!important;
+    }
+    #section-5 .dotsRight {
+        left: 65%!important;
+        width: 4%!important;
+    }
+}
+@media screen and (max-width: 1240px) and (max-height: 415px) {
+    #section-4 .carousel {
+        padding-top: 12%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #section-4 .carousel figure{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 1150px) {
+    #section-1 .contentHeader {
+        left: 24%;
+    }
+    .clock-item p{
+        line-height: 0px;
+    }
+    .countdown-container {
+        top: 55%!important;
+    }
+    #section-2 .contentHeader {
+        left: 5%;
+    }
+    #section-3 .contentHeader,
+    #section-5 .contentHeader{
+        left: 7%;
+    }
+    #section-4 .contentHeader {
+        left: 1%;
+    }
+    #section-2 .subHeader {
+        left: 33%;
+    }
+    #section-3 .subHeader {
+        left: 59%;
+    }
+    #section-4 .subHeader {
+        left: 39%;
+    }
+    #section-5 .subHeader {
+        left: 47%;
+    }
+    #section-2 .dotsLeft {
+        left: 26%;
+        width: 6%;
+    }
+    #section-4 .dotsLeft {
+        left: 17%;
+    }
+    #section-5 .dotsLeft {
+        left: 28%;
+        width: 18%;
+    }
+    #section-2 .dotsRight {
+        left: 76%;
+        width: 5%;
+    }
+    #section-3 .dotsRight {
+        left: 84%;
+    }
+    #section-4 .dotsRight {
+        left: 79%;
+    }
+    #section-2 .contentBodyLeft {
+        left: -11%;
+        width: 38%;
+    }
+    #section-2 .contentBodyCenter {
+        left: 33%;
+    }
+    #section-2 .contentBodyRight {
+        right: -6%;
+        width: 32%;
+    }
+    #section-4 .contentBody {
+        left: -13%;
+        width: 125%;
+    }
+    #section-4 .contentBody p {
+        font: normal normal normal 16px/1.4em spinnaker,sans-serif;
+    }
+    #section-4 .carousel {
+        padding-top: 48%;
+    }
+    #section-5 .contentBody {
+        left: 0%;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 610px) {
+    #section-2 .subHeader {
+        left: 40%;
+    }
+    #section-3 .subHeader {
+        left: 58%;
+    }
+    #section-5 .subHeader {
+        top: 72px;
+    }
+    #section-2 .dotsLeft {
+        left: 33%;
+    }
+    #section-3 .dotsLeft {
+        left: 16%;
+        width: 41%;
+    }
+    #section-4 .dotsLeft {
+        left: 20%;
+    }
+    #section-5 .dotsLeft {
+        left: 34%;
+        width: 12%;
+        top: 180px;
+    }
+    #section-2 .dotsRight {
+        left: 75%;
+    }
+    #section-3 .dotsRight {
+        left: 79%;
+    }
+    #section-4 .dotsRight {
+        left: 74%;
+    }
+    #section-5 .dotsRight {
+        left: 67%;
+        top: 180px;
+    }
+    #section-4 .carousel {
+        padding-top: 42%;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 575px) {
+    #section-2 .subHeader {
+        left: 38%;
+    }
+    #section-2 .dotsLeft {
+        left: 31%;
+    }
+    #section-3 .dotsLeft {
+        left: 15%;
+        width: 42%;
+    }
+    #section-4 .dotsLeft {
+        left: 26%;
+    }
+    #section-2 .dotsRight {
+        left: 67%;
+    }
+    #section-3 .dotsRight {
+        left: 76%;
+    }
+    #section-4 .dotsRight {
+        left: 70%;
+    }
+    #section-4 .subHeader {
+        left: 41%;
+    }
+    #section-5 .subHeader {
+        left: 48%;
+    }
+    #section-5 .dotsLeft {
+        left: 35%;
+        width: 11%;
+        top: 160px;
+    }
+    #section-5 .dotsRight {
+        left: 65%;
+        width: 6%;
+        top: 160px;
+    }
+    #section-4 .contentBody p:last-of-type {
+        display: none;
+    }
+    #section-4 .carousel {
+        padding-top: 33%;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 520px) {
+    #section-2 .subHeader {
+        left: 42%;
+    }
+    #section-2 .dotsLeft {
+        left: 35%;
+    }
+    #section-2 .dotsRight {
+        left: 65%;
+    }
+    #section-3 .subHeader {
+        left: 61%;
+    }
+    #section-4 .subHeader {
+        left: 42%;
+    }
+    #section-3 .dotsLeft {
+        left: 30%;
+        width: 30%;
+    }
+    #section-4 .dotsLeft {
+        left: 30%;
+        width: 12%
+    }
+    #section-3 .dotsRight {
+        left: 76%;
+    }
+    #section-4 .dotsRight {
+        left: 65%;
+        width: 5%;
+    }
+    #section-4 .carousel {
+        padding-top: 30%;
+    }
+    #section-5 .subHeader {
+        top: 43px;
+    }
+    #section-5 .dotsLeft,
+    #section-5 .dotsRight{
+        top: 130px;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 480px) {
+    #section-3 .contentBodyLeft p:first-of-type,
+    #section-3 .contentBodyRight p:first-of-type {
+        line-height: 18px;
+    }
+    #section-5 .subHeader {
+        left: 49%;
+    }
+    #section-5 .dotsLeft {
+        left: 39%!important;
+        width: 9%!important;
+    }
+    #section-5 .dotsRight {
+        left: 63%!important;
+    }
+    #section-4 .carousel {
+        padding-top: 21%;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 415px) {
+    #section-4 .carousel {
+        padding-top: 10%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #section-4 .carousel figure{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #section-1 .contentHeader {
+        left: 22%;
+    }
+    .countdown-container {
+        top: 60%!important;
+    }
+    #section-2 .contentHeader {
+        left: 0%;
+    }
+    #section-3 .contentHeader,
+    #section-5 .contentHeader{
+        left: 3%;
+    }
+    #section-4 .contentHeader {
+        left: -4%;
+    }
+    #section-2 .subHeader {
+        left: 29%;
+    }
+    #section-3 .subHeader {
+        left: 63%;
+    }
+    #section-5 .subHeader{
+        left: 44%;
+    }
+    #section-2 .dotsLeft {
+        left: 23%;
+    }
+    #section-3 .dotsLeft {
+        left: 6%;
+        width: 56%;
+    }
+    #section-5 .dotsLeft{
+        left: 21%;
+        width: 21%;
+    }
+    #section-2 .dotsRight {
+        left: 75%;
+    }
+    #section-3 .dotsRight {
+        left: 90%;
+    }
+    #section-4 .dotsRight {
+        left: 83%;
+    }
+    #section-5 .dotsRight{
+        left: 72%;
+        width: 11%;
+    }
+    #section-2 .contentBodyRight {
+        right: -9%;
+        width: 35%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 52%;
+    }
+    #section-2 .contentBodyCenter img {
+        height: 245px;
+    }
+    #section-2 .contentBody p:last-of-type,
+    #section-2 .contentBodyLeft p:last-of-type,
+    #section-2 .contentBodyRight p:last-of-type {
+        font: normal normal normal 15px/1.4em spinnaker,sans-serif;
+    }
+    #section-3 .contentBodyLeft {
+        left: 0%;
+    }
+    #section-4 .contentBody {
+        left: -16%;
+        width: 132%;
+    }
+    #section-4 .carousel {
+        padding-top: 50%;
+    }
+    #section-5 .contentBody {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1050px) and (max-height: 610px) {
+    #section-2 .subHeader {
+        left: 33%;
+    }
+    #section-3 .subHeader {
+        left: 66%;
+    }
+    #section-5 .subHeader {
+        left: 47%;
+    }
+    #section-2 .dotsLeft {
+        left: 27%;
+    }
+    #section-3 .dotsLeft{
+        left: 13%;
+        width: 51%;
+    }
+    #section-5 .dotsLeft {
+        left: 30%;
+        width: 16%;
+    }
+    #section-2 .dotsRight {
+        left: 71%;
+    }
+    #section-3 .dotsRight {
+        left: 89%;
+    }
+    #section-4 .dotsRight {
+        left: 77%;
+    }
+    #section-5 .dotsRight {
+        left: 70%;
+        width: 6%;
+    }
+    #section-2 .contentBodyRight {
+        right: -10%;
+        width: 37%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 45%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 41%;
+        height: 280px;
+    }
+    #section-4 .carousel {
+        padding-top: 46%;
+    }
+}
+@media screen and (max-width: 1050px) and (max-height: 575px) {
+    #section-2 .subHeader {
+        left: 38%;
+    }
+    #section-2 .dotsLeft {
+        left: 32%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 42%;
+    }
+    #section-3 .subHeader {
+        left: 61%;
+    }
+    #section-3 .dotsLeft {
+        left: 21%;
+        width: 39%;
+    }
+    #section-3 .dotsRight {
+        left: 80%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 33%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 38%;
+        height: 265px;
+    }
+    #section-5 .subHeader {
+        left: 50%;
+    }
+    #section-5 .dotsLeft {
+        left: 33%;
+    }
+    #section-4 .dotsRight {
+        left: 73%;
+    }
+    #section-4 .carousel {
+        padding-top: 38%;
+    }
+}
+@media screen and (max-width: 1050px) and (max-height: 520px) {
+    #section-2 .subHeader {
+        left: 41%;
+    }
+    #section-2 .dotsLeft {
+        left: 34%;
+    }
+    #section-2 .dotsRight {
+        left: 66%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 38%;
+    }
+    #section-2 .contentBodyCenter img {
+        height: 230px;
+    }
+    #section-3 .dotsLeft {
+        left: 28%;
+        width: 32%;
+    }
+    #section-3 .dotsRight {
+        left: 77%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 30%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 60%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 34%;
+        height: 255px;
+    }
+    #section-4 .dotsRight {
+        left: 67%;
+    }
+    #section-4 .carousel {
+        padding-top: 33%;
+    }
+}
+@media screen and (max-width: 1050px) and (max-height: 480px) {
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 35%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 40%;
+    }
+    #section-2 .contentBodyCenter img {
+        height: 195px;
+    }
+    #section-3 .contentBodyCenter {
+        top: 37%;
+        height: 210px;
+    }
+    #section-5 .dotsRight {
+        left: 65%!important;
+    }
+    #section-4 .carousel {
+        padding-top: 23%;
+    }
+}
+@media screen and (max-width: 1050px) and (max-height: 415px) {
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 16%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 27%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 17%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 50%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 18%;
+    }
+    #section-4 .carousel {
+        padding-top: 12%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #section-4 .carousel figure{
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 960px) {
+    #section-1 .contentHeader {
+        left: 18%;
+    }
+    .st-panel > div{
+        width: 90%;
+    }
+    #section-2 .contentHeader {
+        left: 6%;
+    }
+    #section-4 .contentHeader {
+        left: 2%;
+    }
+    #section-5 .contentHeader{
+        left: 5%;
+    }
+    #section-2 .subHeader {
+        left: 33%;
+    }
+    #section-3 .subHeader {
+        left: 63%;
+    }
+    #section-4 .subHeader {
+        left: 41%;
+    }
+    #section-5 .subHeader{
+        left: 43%;
+    }
+    #section-2 .dotsLeft {
+        left: 27%;
+    }
+    #section-3 .dotsLeft {
+        width: 55%;
+    }
+    #section-4 .dotsLeft {
+        left: 19%;
+    }
+    #section-5 .dotsLeft{
+        left: 20%;
+        width: 20%;
+    }
+    #section-2 .dotsRight {
+        left: 77%;
+    }
+    #section-5 .dotsRight{
+        left: 70%;
+        width: 8%;
+    }
+    #section-3 .dotsRight {
+        left: 90%;
+    }
+    #section-4 .dotsRight {
+        left: 82%;
+        width: 6%;
+    }
+    #section-2 .contentBodyLeft {
+        left: -5%;
+    }
+    #section-2 .contentBodyRight {
+        right: -5%;
+    }
+    #section-3 .contentBodyCenter {
+        left: 43%;
+    }
+    #section-4 .contentBody {
+        left: -5%;
+        width: 110%;
+    }
+    #section-4 .contentBody p {
+        font: normal normal normal 14px/1.4em spinnaker,sans-serif;
+    }
+    #section-4 .carousel {
+        padding-top: 47%;
+        width: 63%;
+    }
+    #section-5 .contentBodyCenter {
+        left: 60%;
+    }
+}
+@media screen and (max-width: 960px) and (max-height: 610px) {
+    #section-2 .subHeader {
+        left: 37%;
+    }
+    #section-3 .subHeader {
+        left: 60%;
+    }
+    #section-5 .subHeader {
+        left: 47%;
+    }
+    #section-2 .dotsLeft {
+        left: 29%;
+    }
+    #section-3 .dotsLeft {
+        left: 13%;
+        width: 46%;
+    }
+    #section-4 .dotsLeft {
+        left: 22%;
+    }
+    #section-5 .dotsLeft {
+        left: 29%;
+        width: 16%;
+    }
+    #section-2 .dotsRight {
+        left: 72%;
+    }
+    #section-3 .dotsRight {
+        left: 82%;
+    }
+    #section-4 .dotsRight {
+        left: 77%;
+    }
+    #section-5 .dotsRight {
+        left: 68%;
+    }
+    #section-2 .contentBodyCenter {
+        left: 34%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 33%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 62%;
+    }
+    #section-4 .carousel {
+        padding-top: 42%;
+    }
+}
+@media screen and (max-width: 960px) and (max-height: 575px) {
+    #section-2 .subHeader {
+        left: 40%;
+    }
+    #section-2 .dotsLeft {
+        left: 32%;
+    }
+    #section-2 .dotsRight {
+        left: 69%;
+    }
+    #section-3 .dotsRight {
+        left: 78%;
+    }
+    #section-4 .dotsLeft {
+        left: 26%;
+    }
+    #section-4 .dotsRight {
+        left: 71%;
+    }
+    #section-5 .dotsRight {
+        left: 65%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 37%;
+    }
+    #section-4 .carousel {
+        padding-top: 34%;
+    }
+}
+@media screen and (max-width: 960px) and (max-height: 520px) {
+    #section-2 .subHeader {
+        left: 45%;
+    }
+    #section-3 .subHeader {
+        left: 53%;
+    }
+    #section-2 .dotsLeft {
+        left: 37%;
+    }
+    #section-3 .dotsLeft {
+        left: 26%;
+        width: 26%;
+    }
+    #section-3 .dotsRight {
+        left: 68%;
+    }
+    #section-4 .dotsLeft {
+        left: 32%;
+        width: 9%;
+    }
+    #section-4 .dotsRight {
+        left: 65%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 40%;
+        left: 12%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 40%;
+        left: 58%;
+    }
+    #section-3 .contentBodyCenter{
+        display: none;
+    }
+    #section-4 .carousel {
+        padding-top: 30%;
+    }
+}
+@media screen and (max-width: 960px) and (max-height: 480px) {
+    #section-4 .carousel {
+        padding-top: 22%;
+    }
+    #section-5 .dotsLeft {
+        left: 36%!important;
+        width: 9%!important;
+    }
+    #section-5 .dotsRight {
+        left: 61%!important;
+        width: 6%!important;
+    }
+}
+@media screen and (max-width: 960px) and (max-height: 415px) {
+    #section-3 .contentBodyLeft,
+    #section-3 .contentBodyLeft:nth-last-child(2){
+        top: 30%;
+    }
+    #section-4 .carousel {
+        padding-top: 11%;
+    }
+}
+@media screen and (max-width: 900px){
+    .text .val {
+        font-size: 40px!important;
+    }
+}
+@media screen and (max-width: 850px){
+
+    #section-1 .contentHeader {
+        left: 16%;
+    }
+    #section-2 .contentHeader {
+        left: -7%;
+    }
+    #section-3 .contentHeader,
+    #section-5 .contentHeader{
+        left: 0%;
+    }
+    #section-2 .subHeader {
+        left: 26%;
+    }
+    #section-3 .subHeader {
+        left: 60%;
+    }
+    #section-2 .dotsLeft {
+        left: 20%;
+    }
+    #section-3 .dotsLeft {
+        left: 4%;
+        width: 55%;
+    }
+    #section-4 .dotsRight {
+        left: 88%;
+    }
+    #section-2 .dotsRight {
+        left: 77%;
+    }
+    #section-3 .dotsRight {
+        left: 89%;
+        width: 6%;
+    }
+    #taxisInitial{
+        display: none;
+    }
+    #taxisHide{
+        display: block;
+    }
+    #section-2 .contentBodyCenter img {
+        height: 225px;
+    }
+    #section-3 img{
+        width: 324px;
+        height: 205px;
+    }
+    #section-3 .contentBodyCenter {
+        height: 219px;
+        width: 350px;
+        top: 48%;
+        left: 50%;
+    }
+    #section-4 .contentBody p:last-of-type {
+        display: none;
+    }
+    #section-4 .carousel {
+        padding-top: 52%;
+    }
+    #section-4 .carousel figure {
+        margin-left: 9%;
+    }
+    #section-5 .dotsRight {
+        left: 71%;
+    }
+    #section-5 .contentBody {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 610px ){
+    #section-2 .contentHeader {
+        left: -5%;
+    }
+    #section-2 .subHeader {
+        left: 33%;
+    }
+    #section-2 .dotsLeft {
+        left: 26%;
+    }
+    #section-2 .dotsRight {
+        left: 73%;
+    }
+    #section-2 .contentBodyLeft {
+        left: -2%;
+    }
+    #section-2 .contentBodyRight {
+        right: -3%;
+    }
+    #section-2 .contentBodyCenter {
+        left: 31%;
+        top: 50%;
+    }
+    #section-2 .contentBodyCenter img {
+        height: 210px;
+    }
+    #section-3 .dotsRight {
+        left: 85%;
+    }
+    #section-4 .contentHeader {
+        left: 0%;
+    }
+    #section-4 .dotsRight {
+        left: 81%;
+    }
+    #section-4 .carousel {
+        padding-top: 46%;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 575px ){
+    #section-2 .dotsRight {
+        left: 67%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 48%;
+    }
+    #section-3 .subHeader {
+        left: 62%;
+    }
+    #section-3 .dotsLeft {
+        left: 16%;
+        width: 45%;
+    }
+    #section-3 .dotsRight {
+        left: 83%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 44%;
+    }
+    #section-4 .dotsRight {
+        left: 75%;
+    }
+    #section-4 .carousel {
+        padding-top: 39%;
+    }
+    #section-5 .subHeader {
+        left: 49%;
+    }
+    #section-5 .dotsRight {
+        left: 71%;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 520px ){
+    #section-2 .subHeader {
+        left: 38%;
+    }
+    #section-2 .dotsLeft {
+        left: 32%;
+    }
+    #section-2 .dotsRight {
+        left: 66%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 39%;
+    }
+    #section-2 .contentBodyRight {
+        right: -4%;
+    }
+    #section-3 .subHeader {
+        top: 73px;
+        left: 60%;
+    }
+    #section-3 .dotsLeft {
+        top: 145px;
+        left: 23%;
+        width: 36%;
+    }
+    #section-3 .dotsRight {
+        left: 77%;
+        top: 145px;
+    }
+    #section-3 .contentBodyCenter {
+        top: 37%;
+    }
+    #section-4 .contentHeader {
+        left: -2%;
+    }
+    #section-4 .subHeader {
+        left: 44%;
+    }
+    #section-4 .dotsLeft {
+        left: 35%;
+    }
+    #section-4 .dotsRight {
+        left: 71%;
+    }
+    #section-4 .carousel {
+        padding-top: 36%;
+    }
+    #section-5 .subHeader {
+        top: 43px;
+    }
+    #section-5 .dotsLeft,
+    #section-5 .dotsRight{
+        top: 130px;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 480px ){
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 32%;
+    }
+    #section-4 .carousel {
+        padding-top: 26%;
+    }
+    #section-5 .subHeader {
+        left: 52%;
+    }
+    #section-5 .dotsLeft {
+        left: 41%!important;
+    }
+    #section-5 .dotsRight {
+        left: 68%!important;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 415px ){
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 20%;
+    }
+    #section-2 .contentBodyCenter {
+        top: 25%;
+    }
+    #section-4 .carousel {
+        padding-top: 11%;
+    }
+}
+@media screen and (max-width: 790px) {
+    #section-1 .contentHeader {
+        left: 12%;
+    }
+    #section-1 .contentBody {
+        left: 36%;
+    }
+    .text .val {
+        font-size: 35px!important;
+    }
+    .text .type-time {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 790px) and (max-height: 520px ){
+    #section-3 .subHeader {
+        top: 73px;
+        left: 60%;
+    }
+    #section-3 .dotsLeft {
+        top: 145px;
+        left: 23%;
+        width: 36%;
+    }
+    #section-3 .dotsRight {
+        left: 77%;
+        top: 145px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .clock-item {
+        margin: 0px 0px 30px 0px!important;
+        width: 25%!important;
+        float: left!important;
+    }
+}
+@media screen and (max-width: 740px) {
+    #section-5 .contentHeader{
+        width: 100%;
+    }
+    #section-3 .contentHeader{
+        left: -9%;
+    }
+    #section-4 .contentHeader {
+        left: -7%;
+    }
+    #section-2 .contentHeader h2,
+    #section-3 .contentHeader h2,
+    #section-4 .contentHeader h2,
+    #section-5 .contentHeader h2{
+        font: normal normal bold 130px/1.4em bakery-webfont,sans-serif;
+    }
+    #section-3 .subHeader {
+        left: 61%;
+        top: 78px
+    }
+    #section-2 .subHeader {
+        top: 75px;
+        left: 30%;
+    }
+    #section-4 .subHeader {
+        top: 65px;
+    }
+    #section-5 .subHeader{
+        top: 82px;
+        left: 42%;
+    }
+    #section-2 .dotsLeft {
+        top: 210px;
+        left: 25%;
+    }
+    #section-2 .dotsRight {
+        top: 210px;
+        left: 85%;
+    }
+    #section-3 .dotsLeft {
+        left: 1%;
+        width: 58%;
+        top: 203px;
+    }
+    #section-3 .dotsRight {
+        left: 94%;
+        top: 203px;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight{
+        top: 190px;
+    }
+    #section-4 .dotsRight {
+        left: 91%;
+    }
+    #section-5 .dotsLeft{
+        top: 205px;
+    }
+    #section-5 .dotsRight{
+        left: 72%;
+        top: 205px;
+    }
+    #section-2 .contentBodyLeft {
+        left: 7%;
+        width: 40%;
+        top: 265px;
+    }
+    #section-2 .contentBodyRight {
+        right: 4%;
+        width: 40%;
+        top: 265px;
+    }
+    #section-2 .contentBodyCenter {
+        display: none;
+    }
+    #section-4 .carousel {
+        padding-top: 60%;
+    }
+    #section-5 .contentBody {
+        top: 43%;
+        height: 42%;
+    }
+    #section-5 .contentBodyCenter {
+        top: 43%;
+        height: 42%;
+        width: 40%;
+    }
+    #section-5 button {
+        height: 9%;
+    }
+}
+@media screen and (max-width: 740px) and (max-height: 610px){
+    #section-2 .subHeader {
+        top: 93px;
+        left: 33%;
+    }
+    #section-2 .dotsLeft {
+        top: 200px;
+        left: 22%;
+        width: 9%;
+    }
+    #section-2 .dotsRight {
+        top: 200px;
+        left: 77%;
+        width: 9%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 45%;
+    }
+    #section-3 .subHeader {
+        left: 68%;
+        top: 93px;
+    }
+    #section-3 .dotsLeft {
+        left: 4%;
+        width: 62%;
+        top: 198px;
+    }
+    #section-3 .dotsRight {
+        left: 95%;
+        top: 198px;
+    }
+    .fa.fa-clock-o, .fa.fa-map-marker {
+        font-size: 25px;
+    }
+    #section-3 .contentBodyLeft p:first-of-type,
+    #section-3 .contentBodyRight p:first-of-type {
+        font: normal normal normal 35px/1.4em bakery-webfont,cursive;
+        margin-bottom: 5px;
+    }
+    #section-3 .contentBodyLeft {
+        top: 38%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 65%;
+    }
+    #section-3 .contentBodyCenter {
+        left: 49%;
+    }
+    #section-4 .subHeader {
+        top: 80px;
+        left: 43%;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 185px;
+    }
+    #section-4 .dotsLeft {
+        left: 16%;
+        width: 26%;
+    }
+    #section-4 .dotsRight {
+        left: 86%;
+    }
+    #section-4 .carousel {
+        padding-top: 52%;
+    }
+    #section-5 .dotsLeft {
+        left: 24%;
+        top: 187px;
+    }
+    #section-5 .dotsRight {
+        left: 67%;
+        top: 187px;
+    }
+}
+@media screen and (max-width: 740px) and (max-height: 575px){
+    #section-2 .contentHeader h2,
+    #section-3 .contentHeader h2,
+    #section-4 .contentHeader h2,
+    #section-5 .contentHeader h2{
+        font: normal normal bold 105px/1.4em bakery-webfont,sans-serif;
+    }
+    #section-2 .subHeader {
+        top: 85px;
+        left: 38%;
+    }
+    #section-2 .dotsLeft {
+        top: 175px;
+        left: 27%;
+    }
+    #section-2 .dotsRight {
+        top: 175px;
+        left: 75%;
+        width: 8%;
+    }
+    #section-2 .contentBodyLeft p:first-of-type {
+        font: normal normal normal 35px/1.4em bakery-webfont,cursive;
+        margin-bottom: 5px;
+    }
+    #taxisHide {
+        font: normal normal normal 35px/1.4em bakery-webfont,cursive !important;
+        margin-bottom: 5px !important;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight{
+        top: 230px;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 156px;
+    }
+    #section-4 .dotsLeft {
+        left: 22%;
+        width: 22%;
+    }
+    #section-4 .dotsRight {
+        left: 81%;
+        width: 8%;
+    }
+    #section-4 .subHeader {
+        top: 68px;
+        left: 45%;
+    }
+    #section-4 .contentBody {
+        top: 36%;
+    }
+    #section-4 .carousel {
+        padding-top: 44%;
+    }
+    #section-3 .subHeader {
+        top: 77px;
+        left: 61%;
+    }
+    #section-3 .dotsLeft {
+        left: 8%;
+        width: 52%;
+        top: 165px;
+    }
+    #section-3 .dotsRight {
+        left: 84%;
+        top: 165px;
+    }
+    #section-3 .contentBodyLeft {
+        top: 35%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 63%;
+    }
+    #section-3 .contentBodyLeft p:first-of-type,
+    #section-3 .contentBodyRight p:first-of-type {
+        line-height: 25px;
+    }
+    #section-5 .dotsLeft {
+        top: 170px;
+    }
+    #section-5 .dotsRight {
+        left: 63%;
+        top: 170px;
+    }
+}
+@media screen and (max-width: 740px) and (max-height: 520px){
+    #section-2 .subHeader {
+        top: 60px;
+        left: 42%;
+    }
+    #section-2 .dotsLeft {
+        top: 132px;
+        left: 37%;
+        width: 4%;
+    }
+    #section-2 .dotsRight {
+        top: 132px;
+        left: 72%;
+        width: 4%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 155px;
+        width: 45%;
+    }
+    #section-2 .contentBodyRight {
+        right: -1%;
+    }
+    #section-2 .contentBodyLeft {
+        left: 2%;
+    }
+    #section-3 .dotsLeft {
+        top: 150px;
+        width: 51%;
+    }
+    #section-3 .dotsRight {
+        left: 79%;
+        top: 150px;
+    }
+    #section-3 .contentBodyLeft {
+        top: 42%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 42%;
+    }
+    #section-4 .subHeader {
+        top: 63px;
+        left: 46%;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 135px;
+    }
+    #section-4 .dotsLeft {
+        left: 29%;
+        width: 17%;
+    }
+    #section-4 .dotsRight {
+        left: 74%;
+        width: 6%;
+    }
+    #section-4 .carousel {
+        padding-top: 40%;
+    }
+    #section-5 .subHeader {
+        top: 40px;
+        left: 43%;
+    }
+    #section-5 .dotsLeft {
+        left: 25%!important;
+        width: 16%!important;
+        top: 130px;
+    }
+    #section-5 .dotsRight {
+        left: 64%!important;
+        top: 130px;
+    }
+    #section-5 .contentBody {
+        top: 37%;
+        height: 50%;
+    }
+    #section-5 .contentBodyCenter {
+        top: 37%;
+        height: 50%;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 740px) and (max-height: 480px){
+    #section-4 .carousel {
+        padding-top: 28%;
+    }
+    #section-5 .subHeader {
+        top: 82px;
+        left: 46%;
+    }
+    #section-5 .dotsLeft {
+        left: 29%!important;
+    }
+    #section-5 .dotsRight {
+        left: 63%!important;
+        width: 7%!important;
+    }
+}
+@media screen and (max-width: 740px) and (max-height: 415px){
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 25%;
+    }
+    #section-3 .contentBodyLeft,
+    #section-3 .contentBodyLeft:nth-last-child(2){
+        top: 25%;
+    }
+    #section-3 .contentBodyLeft {
+        left: 6%;
+    }
+    #section-4 .carousel {
+        padding-top: 11%;
+    }
+}
+@media screen and (max-width: 700px) {
+    #section-1 .contentHeader {
+        left: 8%;
+    }
+    .text .val {
+        font-size: 30px!important;
+    }
+    .text .type-time {
+        font-size: 17px;
+    }
+    #section-2 .contentHeader {
+        left: -10%;
+    }
+    #section-3 .contentHeader h2{
+        font: normal normal bold 105px/1.4em bakery-webfont,sans-serif;
+    }
+    #section-3 h3{
+        font: normal normal normal 60px/1.4em lobster,cursive;
+    }
+    #section-3 .subHeader{
+        top: 68px;
+        left: 66%;
+    }
+    #section-3 .dotsLeft{
+        top: 177px;
+        left: 8%;
+        width: 57%;
+    }
+    #section-2 .dotsRight {
+        left: 88%;
+    }
+    #section-3 .dotsRight{
+        top: 177px;
+        left: 96%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight{
+        top: 290px;
+    }
+    #section-3 .contentBodyCenter {
+        display: none;
+    }
+    #section-3 .contentBodyLeft {
+        float: left;
+        width: 50%;
+        top: 44%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        float: right;
+        width: 50%;
+        top: 44%;
+        left: 50%;
+    }
+    #section-3 .contentBodyCenter {
+        display: none;
+    }
+    #section-4 .contentHeader {
+        left: -11%;
+    }
+    #section-4 .subHeader {
+        left: 40%;
+    }
+    #section-4 .dotsLeft {
+        left: 14%;
+        width: 26%;
+    }
+    #section-4 .dotsRight {
+        left: 94%;
+    }
+    #section-4 .carousel figure {
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 610px){
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 245px;
+    }
+    #section-2 .dotsRight {
+        left: 81%;
+        width: 8%;
+    }
+    #section-4 .dotsRight {
+        left: 86%;
+    }
+    #section-5 .dotsRight {
+        left: 69%;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 575px){
+    #section-2 .contentHeader {
+        left: -13%;
+    }
+    #section-2 .subHeader {
+        left: 33%;
+    }
+    #section-2 .dotsLeft {
+        left: 26%;
+        width: 6%;
+    }
+    #section-2 .dotsRight {
+        left: 73%;
+        width: 6%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 212px;
+    }
+    #section-3 .contentHeader {
+        left: -12%;
+    }
+    #section-3 .contentBodyLeft {
+        left: 2%;
+    }
+    #section-4 .subHeader {
+        left: 43%;
+    }
+    #section-4 .dotsLeft {
+        width: 28%;
+    }
+    #section-4 .dotsRight {
+        left: 82%;
+    }
+    #section-4 .carousel {
+        padding-top: 48%;
+    }
+    #section-5 .dotsRight {
+        left: 65%;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 520px){
+    #section-2 .subHeader {
+        left: 36%;
+    }
+    #section-2 .dotsLeft {
+        left: 31%;
+        width: 4%;
+    }
+    #section-2 .dotsRight {
+        left: 67%;
+        width: 4%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 33%;
+    }
+    #section-3 .subHeader {
+        top: 74px;
+        left: 57%;
+    }
+    #section-3 .dotsLeft {
+        top: 145px;
+        width: 47%;
+    }
+    #section-3 .dotsRight {
+        top: 145px;
+        left: 77%;
+    }
+    #section-4 .subHeader {
+        left: 45%;
+    }
+    #section-4 .dotsLeft {
+        width: 16%;
+        left: 29%;
+    }
+    #section-4 .dotsRight {
+        left: 76%;
+    }
+    #section-4 .carousel {
+        padding-top: 42%;
+    }
+    #section-5 .dotsRight {
+        left: 67%!important;
+    }
+    #section-5 .dotsLeft {
+        left: 22%!important;
+        width: 19%!important;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 480px){
+    #section-4 .carousel {
+        padding-top: 28%;
+    }
+    #section-5 .dotsLeft {
+        left: 27%!important;
+        width: 14%!important;
+    }
+    #section-5 .dotsRight {
+        left: 65%!important;
+        width: 9%!important;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 415px){
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 22%;
+    }
+    #section-3 .contentBodyLeft,
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 27%;
+    }
+    #section-4 .carousel {
+        padding-top: 11%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .text .type-time {
+        font-size: 30px!important;
+    }
+    .clock-item .text{
+        top: 48%;
+    }
+    #section-2 .contentHeader {
+        left: -15%;
+    }
+    #section-3 .contentHeader {
+        left: -17%;
+    }
+    #section-4 .contentHeader {
+        left: -16%;
+    }
+    #section-2 .contentHeader h2,
+    #section-4 .contentHeader h2,
+    #section-5 .contentHeader h2{
+        font: normal normal bold 105px/1.4em bakery-webfont,sans-serif;
+    }
+    #section-2 .subHeader h3,
+    #section-4 .subHeader h3,
+    #section-5 h3{
+        font: normal normal normal 60px/1.4em lobster,cursive;
+    }
+    #section-2 .subHeader {
+        top: 68px;
+        left: 28%;
+    }
+    #section-4 .subHeader {
+        left: 41%;
+        top: 54px;
+    }
+    #section-5 .subHeader{
+        top: 70px;
+    }
+    #section-2 .dotsLeft {
+        top: 178px;
+        left: 23%;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 161px;
+    }
+    #section-4 .dotsLeft {
+        left: 17%;
+        width: 24%;
+    }
+    #section-5 .dotsLeft{
+        top: 175px;
+    }
+    #section-2 .dotsRight {
+        left: 78%;
+        top: 178px;
+    }
+    #section-4 .dotsRight {
+        left: 90%;
+    }
+    #section-5 .dotsRight{
+        top: 175px;
+    }
+    #section-4 .carousel {
+        padding-top: 66%;
+        width: 75%;
+    }
+    #section-4 .carousel figure {
+        margin-left: 6%;
+    }
+    #section-5 .contentBodyCenter {
+        display: none;
+    }
+    #section-5 .contentBody {
+        top: 37%;
+        width: 100%;
+        padding-bottom: 8%;
+        height: 47%;
+    }
+    #section-5 button {
+        height: 11%;
+    }
+}
+@media screen and (max-width: 650px) and (max-height: 610px){
+    #section-2 .contentHeader h2,
+    #section-3 .contentHeader h2,
+    #section-4 .contentHeader h2,
+    #section-5 .contentHeader h2{
+        font: normal normal bold 75px/1.4em bakery-webfont,sans-serif;
+    }
+    #section-2 .subHeader h3{
+        font: normal normal normal 40px/1.4em lobster,cursive!important;
+    }
+    #section-4 .subHeader h3,
+    #section-3 .subHeader h3,
+    #section-5 h3 {
+        font: normal normal normal 40px/1.4em lobster, cursive;
+    }
+    #section-4 .contentHeader {
+        top: 40px;
+    }
+    #section-2 .subHeader {
+        top: 63px;
+        left: 37%;
+    }
+    #section-3 .subHeader {
+        left: 57%;
+    }
+    #section-4 .subHeader {
+        left: 44%;
+        top: 62px;
+    }
+    #section-5 .subHeader{
+        top: 63px;
+    }
+    #section-2 .dotsLeft {
+        left: 30%;
+    }
+    #section-2 .dotsRight {
+        left: 70%;
+    }
+    #section-2 .dotsLeft,
+    #section-2 .dotsRight{
+        width: 5%;
+        top: 135px;
+    }
+    #section-3 .dotsLeft {
+        top: 142px;
+        width: 48%;
+    }
+    #section-3 .dotsRight {
+        top: 142px;
+        left: 78%;
+    }
+    #section-4 .dotsLeft,
+    #section-4 .dotsRight {
+        top: 135px;
+    }
+    #section-4 .dotsLeft {
+        left: 27%;
+        width: 17%;
+    }
+    #section-4 .dotsRight {
+        left: 77%;
+    }
+    #section-5 .dotsLeft {
+        top: 135px;
+        left: 30%;
+        width: 11%;
+    }
+    #section-5 .dotsRight{
+        top: 135px;
+        left: 62%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 195px;
+    }
+    #section-4 .carousel {
+        padding-top: 59%;
+    }
+    #section-5 .contentBody {
+        top: 30%;
+        height: 55%;
+    }
+}
+@media screen and (max-width: 650px) and (max-height: 575px){
+    #section-2 .subHeader {
+        top: 62px;
+        left: 37%;
+    }
+    #section-2 .dotsLeft {
+        top: 136px;
+        left: 31%;
+    }
+    #section-2 .dotsRight {
+        left: 70%;
+        top: 136px;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 34%;
+    }
+    #section-4 .carousel {
+        padding-top: 50%;
+    }
+}
+@media screen and (max-width: 650px) and (max-height: 520px){
+    #section-1 .contentHeader {
+        left: 9%;
+    }
+    #section-1 img{
+        width: 30%;
+    }
+    #section-2 .contentHeader {
+        left: -16%;
+    }
+    #section-2 .subHeader {
+        top: 61px;
+        left: 35%;
+    }
+    #section-2 .dotsLeft {
+        top: 132px;
+        left: 29%;
+    }
+    #section-2 .dotsRight {
+        left: 69%;
+        top: 132px;
+    }
+    #section-4 .carousel {
+        padding-top: 45%;
+    }
+    #section-5 .dotsRight {
+        left: 63%!important;
+    }
+    #section-5 .contentBody {
+        top: 32%;
+    }
+}
+@media screen and (max-width: 650px) and (max-height: 480px){
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 32%;
+    }
+    #section-4 .carousel {
+        padding-top: 31%;
+    }
+    #section-5 .dotsRight {
+        left: 66%!important;
+    }
+}
+@media screen and (max-width: 650px) and (max-height: 415px){
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 20%;
+    }
+    #section-4 .carousel {
+        padding-top: 11%;
+    }
+}
+@media screen and (max-width: 650px) and (max-height: 340px){
+    #section-3 .contentBodyLeft {
+        top: 25%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 25%;
+    }
+}
+@media screen and (max-width: 610px) {
+    #section-1 .contentHeader {
+        left: 5%;
+    }
+    .text .val {
+        font-size: 30px!important;
+    }
+    .text .type-time {
+        font-size: 28px!important;
+    }
+    #section-2 .contentHeader {
+        left: -22%;
+    }
+    #section-2 .subHeader {
+        left: 26%;
+    }
+    #section-2 .dotsLeft {
+        left: 19%;
+    }
+    #section-2 .dotsRight {
+        left: 80%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 250px;
+    }
+    #section-3 .contentHeader {
+        top: 40px;
+    }
+    #section-3 .subHeader {
+        top: 49px;
+        left: 60%;
+    }
+    #section-3 .dotsLeft {
+        top: 155px;
+        left: 13%;
+        width: 45%;
+    }
+    #section-3 .dotsRight {
+        top: 155px;
+        left: 92%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 27%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 27%;
+    }
+    #section-3 .contentBodyCenter {
+        display: block;
+        top: 56%;
+        left: 20%;
+    }
+    #section-4 .dotsRight {
+        left: 94%;
+    }
+    #section-4 .contentHeader {
+        left: -20%;
+    }
+    #section-4 .carousel {
+        padding-top: 72%;
+        width: 85%;
+    }
+}
+@media screen and (max-width: 610px) and (max-height: 610px) {
+    #section-2 .subHeader {
+        left: 32%;
+    }
+    #section-2 .dotsLeft {
+        left: 26%;
+        width: 4%;
+    }
+    #section-2 .dotsRight {
+        left: 69%;
+        width: 4%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 195px;
+    }
+    #section-3 .contentHeader {
+        top: 45px;
+    }
+    #section-3 .subHeader {
+        top: 60px;
+        left: 60%;
+    }
+    #section-3 .dotsLeft {
+        top: 132px;
+    }
+    #section-3 .dotsRight {
+        top: 132px;
+        left: 83%;
+    }
+    #section-3 .contentBodyLeft p:first-of-type,
+    #section-3 .contentBodyRight p:first-of-type {
+        line-height: 35px;
+    }
+    #section-3 .contentBodyCenter {
+        top: 54%;
+        height: 210px;
+    }
+    #section-4 .dotsRight {
+        left: 80%;
+    }
+    #section-4 .contentBody {
+        top: 34%;
+    }
+    #section-4 .carousel {
+        padding-top: 62%;
+    }
+}
+@media screen and (max-width: 610px) and (max-height: 575px) {
+    #section-3 .contentBodyCenter {
+        top: 55%;
+        height: 180px;
+    }
+    #section-3 img {
+        width: 305px;
+        height: 180px;
+    }
+    #section-4 .carousel {
+        padding-top: 55%;
+    }
+}
+@media screen and (max-width: 610px) and (max-height: 520px) {
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 170px;
+    }
+    #section-3 .contentBodyCenter {
+        display: none;
+    }
+    #section-3 .contentBodyLeft,
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 40%;
+    }
+    #section-4 .carousel {
+        padding-top: 50%;
+    }
+}
+@media screen and (max-width: 610px) and (max-height: 480px) {
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 155px;
+    }
+    #section-4 .carousel {
+        padding-top: 38%;
+    }
+    #section-5 .dotsRight {
+        left: 68%!important;
+    }
+}
+@media screen and (max-width: 610px) and (max-height: 460px) {
+    #section-2 .contentHeader,
+    #section-4 .contentHeader,
+    #section-3 .contentHeader,
+    #section-5 .contentHeader{
+        display: none !important;
+    }
+    #section-2 h3,
+    #section-4 h3,
+    #section-3 h3,
+    #section-5 h3{
+        display: none !important;
+    }
+    #section-2 .subHeader,
+    #section-3 .subHeader,
+    #section-4 .subHeader,
+    #section-5 .subHeader{
+        display: none !important;
+    }
+    #section-2 .dotsLeft,
+    #section-3 .dotsLeft,
+    #section-4 .dotsLeft,
+    #section-5 .dotsLeft{
+        display: none !important;
+    }
+    #section-2 .dotsRight,
+    #section-3 .dotsRight,
+    #section-4 .dotsRight,
+    #section-5 .dotsRight{
+        display: none !important;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight,
+    #section-4 .contentBodyRight,
+    #section-5 .contentBodyRight{
+        top: 16%!important;
+    }
+    #section-3 .contentBodyLeft {
+        top: 15%;
+        left: 0%;
+        width: 100%
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 54%;
+        left: 0%;
+        width: 100%
+    }
+    #section-4 .carousel {
+        padding-top: 11%;
+    }
+    #section-5 .contentBody {
+        top: 18%!important;
+        height: 65%!important;
+    }
+}
+@media screen and (max-width: 560px) {
+    #section-2 .contentHeader {
+        left: -30%;
+    }
+    #section-1 .contentHeader {
+        left: 12%;
+    }
+    #section-1 .contentHeader img{
+        width: 28%;
+    }
+    #section-3 .contentHeader {
+        left: -28%;
+    }
+    #section-3 .subHeader {
+        top: 50px;
+        left: 53%;
+    }
+    #section-2 .subHeader {
+        left: 22%;
+    }
+    #section-2 .dotsLeft {
+        left: 15%;
+        width: 6%;
+    }
+    #section-2 .dotsRight {
+        left: 82%;
+        width: 6%;
+    }
+    #section-3 .dotsLeft {
+        left: 7%;
+    }
+    #section-3 .dotsRight{
+        left: 90%;
+    }
+    #section-5 .dotsRight{
+        left: 75%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 38%;
+    }
+    #section-3 .contentBodyCenter {
+        display: block;
+        top: 56%;
+        left: 16%;
+    }
+    #section-4 .contentHeader {
+        left: -26%;
+    }
+    #section-4 .subHeader {
+        left: 37%;
+        top: 54px;
+    }
+    #section-4 .dotsLeft {
+        left: 13%;
+    }
+    #section-4 .dotsRight {
+        left: 95%;
+    }
+    #section-4 .carousel {
+        padding-top: 82%;
+    }
+}
+@media screen and (max-width: 560px) and (max-height: 610px) {
+    #section-2 .subHeader {
+        left: 32%;
+    }
+    #section-2 .dotsLeft {
+        left: 25%;
+        width: 6%;
+    }
+    #section-2 .dotsRight {
+        left: 72%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 31%;
+    }
+    #section-3 .subHeader {
+        top: 60px;
+    }
+    #section-3 .dotsRight {
+        left: 79%;
+    }
+    #section-3 .contentBodyCenter {
+        top: 53%;
+    }
+    #section-4 .subHeader {
+        left: 44%;
+        top: 62px;
+    }
+    #section-4 .dotsLeft {
+        left: 26%;
+    }
+    #section-4 .dotsRight {
+        left: 84%;
+    }
+    #section-4 .carousel {
+        padding-top: 67%;
+    }
+    #section-5 .dotsRight {
+        left: 64%;
+    }
+}
+@media screen and (max-width: 560px) and (max-height: 575px) {
+    #section-3 .contentBodyCenter {
+        top: 55%;
+    }
+    #section-3 .contentBodyLeft {
+        left: 0%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        left: 53%;
+    }
+    #section-4 .carousel {
+        padding-top: 60%;
+    }
+    #section-5 .subHeader {
+        top: 55px;
+    }
+    #section-5 .dotsLeft {
+        top: 128px;
+        left: 28%;
+        width: 11%;
+    }
+    #section-5 .dotsRight {
+        left: 65%;
+        top: 128px;
+    }
+}
+@media screen and (max-width: 560px) and (max-height: 520px) {
+    #section-3 .contentBodyCenter {
+        display: none;
+    }
+    #section-4 .carousel {
+        padding-top: 55%;
+    }
+    #section-5 .dotsRight {
+        left: 67%!important;
+    }
+}
+@media screen and (max-width: 560px) and (max-height: 480px) {
+    #section-4 .carousel {
+        padding-top: 40%;
+    }
+    #section-5 .dotsRight {
+        left: 71%!important;
+    }
+}
+@media screen and (max-width: 560px) and (max-height: 460px) {
+    #section-3 .contentBodyLeft {
+        left: -3%;
+        top: 30%;
+        width: 50%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        left: 53%;
+        top: 30%;
+        width: 50%;
+    }
+    #section-4 .carousel {
+        padding-top: 18%;
+    }
+}
+@media screen and (max-width: 510px) {
+    #section-1 .contentHeader {
+        left: 10%;
+    }
+    #section-2 .contentHeader {
+        left: -35%;
+    }
+    #section-3 .contentHeader {
+        left: -35%;
+    }
+    #section-2 .subHeader {
+        left: 19%;
+    }
+    #section-2 .dotsLeft {
+        left: 13%;
+    }
+    #section-3 .dotsLeft {
+        left: 6%;
+        width: 45%;
+    }
+    #section-2 .dotsRight {
+        left: 85%;
+    }
+    #section-3 .dotsRight {
+        left: 94%;
+    }
+    #section-3 .contentBodyLeft {
+        left: 0%;
+        width: 100%;
+        top: 30%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2){
+        left: 0%;
+        width: 100%;
+        top: 60%;
+    }
+    #section-3 .contentBodyCenter {
+        display: none;
+    }
+    #section-4 .contentHeader {
+        left: -38%;
+    }
+    #section-4 .subHeader {
+        left: 29%;
+    }
+    #section-4 .dotsLeft {
+        left: 7%;
+    }
+    #section-4 .carousel {
+        padding-top: 90%;
+        width: 94%;
+    }
+    #section-4 .carousel figure {
+        margin-left: 1%;
+    }
+    #section-5 .dotsLeft {
+        left: 15%;
+        width: 24%;
+    }
+    #section-5 .dotsRight{
+        left: 80%;
+    }
+    #section-5 .contentBody {
+        top: 40%;
+        padding-bottom: 10%;
+        padding-top: 5%;
+    }
+}
+@media screen and (max-width: 510px) and (max-height: 610px) {
+    #section-2 .subHeader {
+        left: 31%;
+    }
+    #section-2 .dotsLeft {
+        left: 24%;
+    }
+    #section-2 .dotsRight {
+        left: 76%;
+    }
+    #section-2 .swing{
+        line-height: 45px!important;
+    }
+    #section-3 .subHeader {
+        left: 61%;
+    }
+    #section-3 .dotsLeft {
+        left: 13%;
+    }
+    #section-3 .dotsRight {
+        left: 91%;
+    }
+    #section-4 .subHeader {
+        left: 39%;
+    }
+    #section-4 .dotsLeft {
+        left: 21%;
+    }
+    #section-4 .carousel {
+        padding-top: 78%;
+    }
+    #section-5 .dotsLeft {
+        left: 24%;
+        width: 17%;
+    }
+    #section-5 .dotsRight {
+        left: 68%;
+    }
+    #section-5 .contentBody {
+        top: 31%;
+    }
+}
+@media screen and (max-width: 510px) and (max-height: 575px) {
+    #section-2 .contentBodyLeft {
+        left: 2%;
+        width: 45%;
+    }
+    #section-4 .contentBody {
+        top: 30%;
+    }
+    #section-4 .carousel {
+        padding-top: 66%;
+    }
+}
+@media screen and (max-width: 510px) and (max-height: 520px) {
+    #section-2 .contentBodyLeft {
+        left: -2%;
+        width: 51%;
+    }
+    #section-3 .contentBodyLeft {
+        left: 0%;
+        width: 100%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2){
+        left: 0%;
+        width: 100%;
+    }
+    #section-4 .contentBody p {
+        display: none;
+    }
+    #section-4 .carousel {
+        padding-top: 44%;
+    }
+    #section-5 .dotsLeft {
+        left: 25%!important;
+        width: 15%!important;
+    }
+    #section-5 .dotsRight {
+        left: 74%!important;
+    }
+}
+@media screen and (max-width: 510px) and (max-height: 460px){
+    #section-3 .contentBodyLeft {
+        left: 0%;
+        top: 15%;
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 53%;
+        left: 0%;
+    }
+    #section-4 .carousel {
+        padding-top: 20%;
+    }
+}
+@media screen and (max-width: 480px) {
+    #section-1 .contentHeader {
+        left: 10%;
+    }
+    #section-1 .contentBody {
+        left: 29%;
+    }
+    .countdown.countdown-container{
+        display:none;
+    }
+}
+@media screen and (max-width: 450px) {
+    #section-2 .contentHeader {
+        left: -46%;
+    }
+    #section-2 .subHeader {
+        left: 15%;
+    }
+    #section-2 .dotsLeft {
+        left: 10%;
+    }
+    #section-2 .dotsRight {
+        left: 87%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 35%;
+    }
+    #section-2 .swing {
+        line-height: 45px!important;
+    }
+    #section-3 .contentHeader {
+        left: -47%;
+    }
+    #section-3 .dotsRight {
+        left: 98%;
+    }
+    #section-4 .contentHeader {
+        left: -47%;
+    }
+    #section-4 .subHeader {
+        left: 24%;
+    }
+    #section-4 .dotsLeft {
+        left: 6%;
+        width: 19%;
+    }
+    #section-4 .carousel {
+        padding-top: 100%;
+        width: 50%;
+    }
+    #section-4 .carousel figure {
+        margin-left: 0%;
+    }
+    #section-5 .dotsLeft {
+        left: 14%;
+        width: 25%;
+    }
+    #section-5 .dotsRight{
+        left: 85%;
+        width: 10%;
+    }
+}
+@media screen and (max-width: 450px) and (max-height: 610px) {
+    #section-2 .subHeader {
+        left: 28%;
+    }
+    #section-2 .dotsLeft {
+        left: 20%;
+    }
+    #section-2 .dotsRight {
+        left: 78%;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 28%;
+    }
+    #section-3 .dotsRight {
+        left: 93%;
+    }
+    #section-4 .subHeader {
+        left: 41%;
+    }
+    #section-4 .dotsLeft {
+        left: 21%;
+    }
+    #section-4 .dotsRight {
+        left: 89%;
+    }
+    #section-4 .carousel {
+        padding-top: 87%;
+    }
+    #section-5 .dotsRight {
+        left: 72%;
+        width: 12%;
+    }
+    #section-5 .contentBody {
+        top: 31%;
+    }
+}
+@media screen and (max-width: 450px) and (max-height: 575px) {
+    #section-4 .carousel {
+        padding-top: 75%;
+    }
+}
+@media screen and (max-width: 450px) and (max-height: 540px) {
+    #section-2 .contentHeader,
+    #section-3 .contentHeader,
+    #section-4 .contentHeader,
+    #section-5 .contentHeader{
+        display: none !important;
+    }
+    #section-2 h3,
+    #section-3 h3,
+    #section-4 h3,
+    #section-5 h3{
+        display: none !important;
+    }
+    #section-2 .subHeader,
+    #section-3 .subHeader,
+    #section-4 .subHeader,
+    #section-5 .subHeader{
+        display: none !important;
+    }
+    #section-2 .dotsLeft,
+    #section-3 .dotsLeft,
+    #section-4 .dotsLeft,
+    #section-5 .dotsLeft{
+        display: none !important;
+    }
+    #section-2 .dotsRight,
+    #section-3 .dotsRight,
+    #section-4 .dotsRight,
+    #section-5 .dotsRight{
+        display: none !important;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 18%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 15%;
+        left: 0%;
+        width: 100%
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 54%;
+        left: 0%;
+        width: 100%
+    }
+    #section-4 .contentBody {
+        top: 20%;
+    }
+    #section-4 .carousel {
+        padding-top: 65%;
+    }
+    #section-5 .contentBody {
+        top: 20%!important;
+        height: 62%!important;
+    }
+}
+@media screen and (max-width: 450px) and (max-height: 520px) {
+    #section-4 .carousel {
+        padding-top: 31%;
+    }
+}
+@media screen and (max-width: 415px) {
+    #section-1 .contentHeader {
+        left: 5%;
+    }
+    #section-2 .contentHeader,
+    #section-3 .contentHeader,
+    #section-4 .contentHeader,
+    #section-5 .contentHeader{
+        display: none !important;
+    }
+    #section-2 h3,
+    #section-3 h3,
+    #section-4 h3,
+    #section-5 h3{
+        display: none !important;
+    }
+    #section-2 .subHeader,
+    #section-3 .subHeader,
+    #section-4 .subHeader,
+    #section-5 .subHeader{
+        display: none !important;
+    }
+    #section-2 .dotsLeft,
+    #section-3 .dotsLeft,
+    #section-4 .dotsLeft,
+    #section-5 .dotsLeft{
+        display: none !important;
+    }
+    #section-2 .dotsRight,
+    #section-3 .dotsRight,
+    #section-4 .dotsRight,
+    #section-5 .dotsRight{
+        display: none !important;
+    }
+    #section-2 .contentBodyLeft,
+    #section-2 .contentBodyRight {
+        top: 20%;
+    }
+    #section-3 .contentBodyLeft {
+        top: 15%;
+        left: 0%;
+        width: 100%
+    }
+    #section-3 .contentBodyLeft:nth-last-child(2) {
+        top: 54%;
+        left: 0%;
+        width: 100%
+    }
+    #section-4 .contentBody {
+        top: 20%;
+    }
+    #section-4 .carousel {
+        width: 65%;
+    }
+    #section-4 .carousel figure {
+        margin-left: 9%;
+    }
+    #section-5 .contentBody {
+        top: 20%;
+    }
+}
+@media screen and (max-width: 415px) and (max-height: 575px) {
+    #section-4 .carousel {
+        padding-top: 90%;
+    }
+}
+@media screen and (max-width: 415px) and (max-height: 520px) {
+    #section-4 .carousel {
+        padding-top: 35%;
+    }
+}
+@media screen and (max-width: 415px) and (max-height: 475px) {
+    .fa.fa-taxi,
+    .fa.fa-bus,
+    .fa.fa-clock-o,
+    .fa.fa-map-marker{
+        font-size: 20px;
+    }
+    #section-2 .contentBody p:first-of-type,
+    #section-2 .contentBodyLeft p:first-of-type,
+    #section-2 .contentBodyRight p:first-of-type,
+    #section-3 .contentBodyLeft p:first-of-type,
+    #section-3 .contentBodyRight p:first-of-type{
+        font: normal normal normal 35px/1.4em bakery-webfont,cursive !important;
+    }
+    #section-2 .contentBody p:last-of-type,
+    #section-2 .contentBodyLeft p:last-of-type,
+    #section-2 .contentBodyRight p:last-of-type,
+    #section-3 .contentBody p,
+    #section-3 .contentBodyLeft p,
+    #section-3 .contentBodyRight p{
+        font: normal normal normal 12px/1.4em spinnaker,sans-serif;
+    }
+}
+@media screen and (max-width: 400px) {
+    #section-5 .contentBody {
+        top: 15%!important;
+        padding-top: 3%;
+        height: 70%!important;
+    }
+    #section-5 .contentBody .w45 {
+        width: 95%;
+    }
+    #section-5 .contentBody .w45 {
+        margin-left: 0%;
+        margin-top: 4%;
+    }
+    #section-5 button {
+        height: 7%;
+        width: 27%;
+    }
+}
+@media screen and (max-width: 400px) and (max-height: 610px){
+    #section-5 .contentBody input {
+        height: 32px;
+    }
+}
+@media screen and (max-width: 400px) and (max-height: 535px){
+    #section-5 .contentBody {
+        top: 13%!important;
+        height: 75%!important;
+    }
+}
+@media screen and (max-width: 380px) {
+    #section-1 .contentHeader {
+        left: 5%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .fa.fa-taxi,
+    .fa.fa-bus,
+    .fa.fa-clock-o,
+    .fa.fa-map-marker{
+        font-size: 20px;
+    }
+    #section-2 .contentBody p:first-of-type,
+    #section-2 .contentBodyLeft p:first-of-type,
+    #section-2 .contentBodyRight p:first-of-type,
+    #section-3 .contentBodyLeft p:first-of-type,
+    #section-3 .contentBodyRight p:first-of-type,
+    #taxisHide{
+        font: normal normal normal 40px/1.4em bakery-webfont,cursive!important;
+    }
+    #section-2 .contentBody p:last-of-type,
+    #section-2 .contentBodyLeft p:last-of-type,
+    #section-2 .contentBodyRight p:last-of-type,
+    #section-3 .contentBody p,
+    #section-3 .contentBodyLeft p,
+    #section-3 .contentBodyRight p,
+    #section-4 .contentBody p{
+        font: normal normal normal 12px/1.4em spinnaker,sans-serif;
+    }
+    #section-4 .carousel {
+        width: 75%;
+    }
+    #section-4 .carousel figure {
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width: 315px) {
+    #section-1 .contentHeader {
+        left:7%;
+    }
+}
+@media screen and (max-width: 315px) {
+    #section-1 .contentHeader {
+        left: 17%;
+    }
+    #section-1 .contentBody {
+        left: 23%;
+    }
+    #section-5 button {
+        min-width: 25%;
+    }
+    #section-5 .subHeader{
+        left: 38%;
+    }
+    #section-5 .dotsLeft{
+        left: 10%;
+        width: 25%;
+    }
+    #section-5 .contentBody {
+        padding-bottom: 15%;
+        height: 70%!important;
+    }
+}
+@media screen and (max-width: 295px){
+    #section-1 .contentHeader {
+        left: 15%;
+    }
+}

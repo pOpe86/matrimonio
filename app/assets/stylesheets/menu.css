@@ -1,0 +1,125 @@
+.header > div > input,
+.header > div > a {
+    position: fixed;
+    top: 6px;
+    width: 10%;
+    height: 35px;
+    cursor: pointer;
+    font: normal normal normal 15px/1.4em spinnaker,sans-serif;
+    font-size: 14px;
+    line-height: 35px;
+    transition: border-color 0.4s ease 0s;
+    border-radius: 0;
+    border: solid 2px transparent;
+}
+.header > div > input {
+    opacity: 0;
+    /*z-index: 1000;*/
+}
+.header > div > a {
+    z-index: 10;
+    font-weight: 100;
+    background: #fff;
+    color: #494848;
+    text-align: center;
+}
+.header .headerIcons{
+    display: none;
+}
+.header > div > a:hover,
+.header > div > input:checked + a,
+.header > div > input:hover + a{
+    border-radius: 0;
+    border: solid 2px rgba(202, 16, 16, 0);
+    border-color: rgba(47, 46, 46, 1);
+    line-height: 35px;
+    transition: border-color 0.4s ease 0s;
+}
+/* Menu buttons */
+
+/* POSITIONS */
+
+#buttonMenu1, #buttonMenu1 ~ a {
+    left: 5%;
+}
+#buttonMenu2, #buttonMenu2 ~ a {
+    left: 25%;
+}
+#buttonMenu3, #buttonMenu3 ~ a {
+    left: 45%;
+}
+#buttonMenu4, #buttonMenu4 ~ a {
+    left: 65%;
+}
+#buttonMenu5, #buttonMenu5 ~ a {
+    left: 85%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1150px) {
+    .header > div > input,
+    .header > div > a {
+        width: 12%;
+    }
+    #buttonMenu1, #buttonMenu1 ~ a {
+        left: 3%;
+    }
+    #buttonMenu2, #buttonMenu2 ~ a {
+        left: 23%;
+    }
+    #buttonMenu3, #buttonMenu3 ~ a {
+        left: 43%;
+    }
+    #buttonMenu4, #buttonMenu4 ~ a {
+        left: 63%;
+    }
+    #buttonMenu5, #buttonMenu5 ~ a {
+        left: 83%;
+    }
+}
+@media screen and (max-width: 975px) {
+    .header > div > input,
+    .header > div > a {
+        width: 15%;
+    }
+    #buttonMenu1, #buttonMenu1 ~ a {
+        left: 2%;
+    }
+    #buttonMenu2, #buttonMenu2 ~ a {
+        left: 22%;
+    }
+    #buttonMenu3, #buttonMenu3 ~ a {
+        left: 42%;
+    }
+    #buttonMenu4, #buttonMenu4 ~ a {
+        left: 62%;
+    }
+    #buttonMenu5, #buttonMenu5 ~ a {
+        left: 82%;
+    }
+}
+@media screen and (max-width: 775px) {
+    .header > div > input,
+    .header > div > a {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 675px) {
+    .header > div > input,
+    .header > div > a {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .header .headerText{
+        display: none;
+    }
+    .header .headerIcons{
+        display: block;
+    }
+    .header .headerIcons i{
+        font-size: 20px!important;
+        color: #494848!important;
+    }
+}

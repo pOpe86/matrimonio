@@ -1,0 +1,72 @@
+.footer > div{
+    position: fixed;
+    bottom: 0px;
+    font-size: 16px;
+    height: 47px;
+    line-height: 47px;
+    z-index: 10;
+}
+.footer > div > p{
+    /*position: fixed;*/
+    /*bottom: 0px;*/
+    font-size: 16px;
+    height: 47px;
+    line-height: 47px;
+    font: normal normal normal 15px/1.4em spinnaker,sans-serif;
+    color: rgba(73,72,72,1);
+}
+.leftFooter, .rightFooter {
+    width: 47%;
+}
+.leftFooter{
+    text-align: right;
+}
+.rightFooter{
+    left: 53%;
+}
+.rings {
+    left: 47%;
+    text-align: center;
+    width: 6%;
+}
+.rings img{
+    width: 30px;
+    margin-top: 6px;
+}
+.shortDate{
+    display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1000px) {
+    .leftFooter{
+        width: 45%;
+    }
+    .rightFooter {
+        width: 44%;
+        left: 56%;
+    }
+    .rings{
+        width: 8%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .leftFooter{
+        width: 44%;
+    }
+    .rightFooter {
+        width: 44%;
+    }
+    .rings{
+        left: 46%;
+    }
+}
+@media screen and (max-width: 380px){
+    .longDate{
+        display: none;
+    }
+    .shortDate{
+        display: block;
+    }
+}

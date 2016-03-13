@@ -1,0 +1,106 @@
+body{
+    overflow: hidden;
+}
+h1 {
+    font-family: Lobster;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+}
+h3 {
+    font-family: Lobster;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 15.4px;
+}
+p {
+    font-family: bakery-webfont;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+blockquote {
+    font-family: Lobster;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+pre {
+    font-family: Lobster;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+figure, figcaption{
+    display:block;
+}
+.st-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+}
+.st-container:before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 47px;
+    background: #fff;
+    z-index: 9;
+    top: 0;
+}
+.st-container:after {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 47px;
+    background: #fff;
+    z-index: 9;
+    bottom: 0;
+}
+
+/* MARGINS */
+
+.pt0{
+    padding-top: 0%!important;
+}
+
+.pt1{
+    padding-top: 1%!important;
+}
+
+.pt2{
+    padding-top: 2%!important;
+}
+
+.pt3{
+    padding-top: 3%!important;
+}
+
+.pt4{
+    padding-top: 4%!important;
+}
+
+.pt6{
+    padding-top: 6%!important;
+}
+
+.pt8{
+    padding-top: 8%!important;
+}
+
+.pt9{
+    padding-top: 9%!important;
+}
