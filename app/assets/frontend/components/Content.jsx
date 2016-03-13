@@ -63,6 +63,7 @@ export default class Content extends React.Component{
                     header={header5}
                     subheader={subheader5}
                     img={img5}
+                    showEmailModal={this.props.showEmailModal}
                 />
             </div>
         );

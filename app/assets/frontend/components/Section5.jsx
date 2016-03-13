@@ -2,25 +2,6 @@ export default class Section5 extends React.Component{
     removeColor(e) {
         e.target.className = e.target.className.replace("initSelect", "");
     }
-    sendMail(){
-        $.ajax({
-            type: "GET",
-            url: "/emails",
-            data: { confirmation: { mainname: $('#mainName').val(),
-                                    mainsurname: $('#mainSurname').val(),
-                                    email: $('#email').val(),
-                                    partnersname: $('#partnersName').val(),
-                                    partnerssurname: $('#partnersSurname').val(),
-                                    comming: $('#comming').val(),
-                                    bus: $('#bus').val() } },
-            success:(function(){
-                console.log("yeah");
-            }),
-            error:(function(){
-                console.log("buuu");
-            })
-        });
-    }
     render(){
         return(
             <section id={this.props.id} className={this.props.css}>
@@ -58,7 +39,7 @@ export default class Section5 extends React.Component{
                             </select>
                         </div>
                         <div>
-                            <button onClick={this.sendMail}>ENVIAR</button>
+                            <button onClick={this.props.showEmailModal}>ENVIAR</button>
                         </div>
                     </div>
                     <div className="contentBodyCenter">

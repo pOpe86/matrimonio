@@ -17,7 +17,6 @@ class EmailsController < ApplicationController
     # @comming = params[:comming]
     # @bus = params[:bus]
     @confirmation = params[:confirmation]
-    puts "------------ ********* -----------"
     UserNotifier.send_email(@confirmation).deliver
   end
 

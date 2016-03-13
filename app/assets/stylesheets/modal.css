@@ -2,6 +2,19 @@
     height: 400px;
     background-color:#91E0C7; /*background-color: #FFE9A0;*/
 }
+#emailContent{
+    height: 225px;
+    border: #FFE589 solid 11px;
+    background-color: #FFF5D2;
+}
+#emailContent .fa-times-circle{
+    color: rgb(234, 67, 53);
+    font-size: 55px;
+}
+#emailContent .fa-check-circle{
+    color: rgb(52, 168, 83);
+    font-size: 55px;
+}
 .modalHeader{
     position: absolute;
     top: 5%;
@@ -127,6 +140,16 @@
     color: #FFFFFF;
     font: 15px sans-serif;
 }
+.close{
+    width: 100px;
+    height: 35px;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    color: #FFFFFF;
+    font: 15px sans-serif;
+}
 .ok{
     left: 25%;
     background: #99BD74;
@@ -138,6 +161,28 @@
     right: 25%;
     background: #f25555;
 }
-.cancel:hover{
+.close{
+    background: #f25555;
+}
+.cancel:hover,
+.close:hover{
     background: #da1111;
+}
+.emailClose{
+    width: 100%;
+    bottom: 30%;
+    position: absolute;
+    left: 42%;
+}
+.emailIcon{
+    float: left;
+    width: 10%;
+    margin-left: 5%;
+    margin-top: 11%;
+}
+.emailText{
+    float: left;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 15%;
 }

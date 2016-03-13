@@ -64,6 +64,10 @@
 	
 	var _ModalContent2 = _interopRequireDefault(_ModalContent);
 	
+	var _EmailContent = __webpack_require__(41);
+	
+	var _EmailContent2 = _interopRequireDefault(_EmailContent);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -72,7 +76,8 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Modal = __webpack_require__(41);
+	var Modal = __webpack_require__(42);
+	var FadeModal = __webpack_require__(51);
 	
 	var Main = (function (_React$Component) {
 	    _inherits(Main, _React$Component);
@@ -83,7 +88,8 @@
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Main).call(this, props));
 	
 	        _this.state = {
-	            modalId: 0
+	            modalId: 0,
+	            modalEmail: 'emailSuccess'
 	        };
 	        return _this;
 	    }
@@ -102,6 +108,50 @@
 	            this.refs.modal.hide();
 	        }
 	    }, {
+	        key: 'displayEmailModal',
+	        value: function displayEmailModal(id) {
+	            this.setState({
+	                modalEmail: id
+	            });
+	            this.refs.email.show();
+	        }
+	    }, {
+	        key: 'showEmailModal',
+	        value: function showEmailModal() {
+	
+	            var name = $('#mainName').val();
+	            var surname = $('#mainSurname').val();
+	            var cming = $('#comming').val();
+	            var autobus = $('#bus').val();
+	
+	            if (name.length == 0 || surname.length == 0 || cming == null || autobus == null) {
+	                this.displayEmailModal("emptyParams");
+	            } else {
+	                $.ajax({
+	                    type: "GET",
+	                    url: "/emails",
+	                    data: { confirmation: { mainname: $('#mainName').val(),
+	                            mainsurname: $('#mainSurname').val(),
+	                            email: $('#email').val(),
+	                            partnersname: $('#partnersName').val(),
+	                            partnerssurname: $('#partnersSurname').val(),
+	                            comming: $('#comming').val(),
+	                            bus: $('#bus').val() } },
+	                    success: (function () {
+	                        this.displayEmailModal("emailSuccess");
+	                    }).bind(this),
+	                    error: (function () {
+	                        this.displayEmailModal("emailError");
+	                    }).bind(this)
+	                });
+	            }
+	        }
+	    }, {
+	        key: 'hideEmailModal',
+	        value: function hideEmailModal() {
+	            this.refs.email.hide();
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return React.createElement(
@@ -111,12 +161,17 @@
 	                    'div',
 	                    { className: 'st-container' },
 	                    React.createElement(_Header2.default, null),
-	                    React.createElement(_Content2.default, { showModal: this.showModal.bind(this) }),
+	                    React.createElement(_Content2.default, { showModal: this.showModal.bind(this), showEmailModal: this.showEmailModal.bind(this) }),
 	                    React.createElement(_Footer2.default, null),
 	                    React.createElement(
 	                        Modal,
 	                        { ref: 'modal' },
 	                        React.createElement(_ModalContent2.default, { hideModal: this.hideModal.bind(this), modalId: this.state.modalId })
+	                    ),
+	                    React.createElement(
+	                        FadeModal,
+	                        { ref: 'email' },
+	                        React.createElement(_EmailContent2.default, { hideEmailModal: this.hideEmailModal.bind(this), modalEmail: this.state.modalEmail })
 	                    )
 	                )
 	            );
@@ -418,7 +473,8 @@
 	                    css: "st-panel",
 	                    header: header5,
 	                    subheader: subheader5,
-	                    img: img5
+	                    img: img5,
+	                    showEmailModal: this.props.showEmailModal
 	                })
 	            );
 	        }
@@ -1498,27 +1554,6 @@
 	            e.target.className = e.target.className.replace("initSelect", "");
 	        }
 	    }, {
-	        key: "sendMail",
-	        value: function sendMail() {
-	            $.ajax({
-	                type: "GET",
-	                url: "/emails",
-	                data: { confirmation: { mainname: $('#mainName').val(),
-	                        mainsurname: $('#mainSurname').val(),
-	                        email: $('#email').val(),
-	                        partnersname: $('#partnersName').val(),
-	                        partnerssurname: $('#partnersSurname').val(),
-	                        comming: $('#comming').val(),
-	                        bus: $('#bus').val() } },
-	                success: function success() {
-	                    console.log("yeah");
-	                },
-	                error: function error() {
-	                    console.log("buuu");
-	                }
-	            });
-	        }
-	    }, {
 	        key: "render",
 	        value: function render() {
 	            return React.createElement(
@@ -1614,7 +1649,7 @@
 	                            null,
 	                            React.createElement(
 	                                "button",
-	                                { onClick: this.sendMail },
+	                                { onClick: this.props.showEmailModal },
 	                                "ENVIAR"
 	                            )
 	                        )
@@ -2090,11 +2125,107 @@
 
 /***/ },
 /* 41 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var EmailContent = (function (_React$Component) {
+	    _inherits(EmailContent, _React$Component);
+	
+	    function EmailContent(props) {
+	        _classCallCheck(this, EmailContent);
+	
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(EmailContent).call(this, props));
+	
+	        {
+	            (function () {
+	                switch (_this.props.modalEmail) {
+	                    case "emailSuccess":
+	                        _this.state = {
+	                            description: "Bien! La confirmación se ha enviado correctamente.",
+	                            picture: "fa fa-check-circle"
+	                        };
+	                        break;
+	                    case "emailError":
+	                        _this.state = {
+	                            description: "Ups! Se ha producido un error al enviar la confirmación.",
+	                            picture: "fa fa-times-circle"
+	                        };
+	                        break;
+	                    case "emptyParams":
+	                        _this.state = {
+	                            description: "Asegúrate de que nos has dicho tu nombre y apellidos, si asistirás al enlace y si utilizarás el servicio de autobuses.",
+	                            picture: "fa fa-times-circle"
+	                        };
+	                        break;
+	                    default:
+	                        _this.state = {
+	                            description: "-",
+	                            picture: ""
+	                        };
+	                }
+	            })();
+	        }
+	        return _this;
+	    }
+	
+	    _createClass(EmailContent, [{
+	        key: "render",
+	        value: function render() {
+	            return React.createElement(
+	                "div",
+	                { id: "emailContent" },
+	                React.createElement(
+	                    "div",
+	                    null,
+	                    React.createElement(
+	                        "div",
+	                        { className: "emailIcon" },
+	                        React.createElement("i", { className: this.state.picture })
+	                    ),
+	                    React.createElement(
+	                        "div",
+	                        { className: "emailText" },
+	                        this.state.description
+	                    )
+	                ),
+	                React.createElement(
+	                    "div",
+	                    { className: "emailClose" },
+	                    React.createElement(
+	                        "button",
+	                        { className: "close", onClick: this.props.hideEmailModal },
+	                        "Cerrar"
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return EmailContent;
+	})(React.Component);
+	
+	exports.default = EmailContent;
+
+/***/ },
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(42);
-	var insertKeyframesRule = __webpack_require__(44);
-	var appendVendorPrefix = __webpack_require__(47);
+	var modalFactory = __webpack_require__(43);
+	var insertKeyframesRule = __webpack_require__(45);
+	var appendVendorPrefix = __webpack_require__(48);
 	
 	var animation = {
 	    show: {
@@ -2337,11 +2468,11 @@
 
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//var React = require('react');
-	var transitionEvents = __webpack_require__(43);
+	var transitionEvents = __webpack_require__(44);
 	
 	module.exports = function(animation){
 	
@@ -2499,7 +2630,7 @@
 
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2600,13 +2731,13 @@
 
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var insertRule = __webpack_require__(45);
-	var vendorPrefix = __webpack_require__(46)();
+	var insertRule = __webpack_require__(46);
+	var vendorPrefix = __webpack_require__(47)();
 	var index = 0;
 	
 	module.exports = function(keyframes) {
@@ -2636,7 +2767,7 @@
 
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2661,7 +2792,7 @@
 
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2680,12 +2811,12 @@
 
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getVendorPropertyName = __webpack_require__(48);
+	var getVendorPropertyName = __webpack_require__(49);
 	
 	module.exports = function(target, sources) {
 	  var to = Object(target);
@@ -2716,12 +2847,12 @@
 
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var builtinStyle = __webpack_require__(49);
+	var builtinStyle = __webpack_require__(50);
 	var prefixes = ['Moz', 'Webkit', 'O', 'ms'];
 	var domVendorPrefix;
 	
@@ -2759,12 +2890,116 @@
 
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports) {
 
 	'use strict';
 	
 	module.exports = document.createElement('div').style;
+
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var modalFactory = __webpack_require__(43);
+	var insertKeyframesRule = __webpack_require__(45);
+	var appendVendorPrefix = __webpack_require__(48);
+	
+	var animation = {
+	    show: {
+	        animationDuration: '0.3s',
+	        animationTimingFunction: 'ease-out'
+	    },
+	    hide: {
+	        animationDuration: '0.3s',
+	        animationTimingFunction: 'ease-out'
+	    },
+	    showContentAnimation: insertKeyframesRule({
+	
+	        '0%': {
+	            opacity: 0
+	        },
+	        '100%': {
+	            opacity: 1
+	        }
+	    }),
+	
+	    hideContentAnimation: insertKeyframesRule({
+	        '0%': {
+	            opacity: 1
+	        },
+	        '100%': {
+	            opacity: 0
+	        }
+	    }),
+	
+	    showBackdropAnimation: insertKeyframesRule({
+	        '0%': {
+	            opacity: 0
+	        },
+	        '100%': {
+	            opacity: 0.9
+	        },
+	    }),
+	
+	    hideBackdropAnimation: insertKeyframesRule({
+	        '0%': {
+	            opacity: 0.9
+	        },
+	        '100%': {
+	            opacity: 0
+	        }
+	    })
+	};
+	
+	var showAnimation = animation.show;
+	var hideAnimation = animation.hide;
+	var showContentAnimation = animation.showContentAnimation;
+	var hideContentAnimation = animation.hideContentAnimation;
+	var showBackdropAnimation = animation.showBackdropAnimation;
+	var hideBackdropAnimation = animation.hideBackdropAnimation;
+	
+	module.exports = modalFactory({
+	    getRef: function(willHidden) {
+	        return 'content';
+	    },
+	    getModalStyle: function(willHidden) {
+	        return appendVendorPrefix({
+	            zIndex: 1050,
+	            position: "fixed",
+	            width: "525px",
+	            transform: "translate3d(-50%, -50%, 0)",
+	            top: "50%",
+	            left: "50%"
+	        })
+	    },
+	    getBackdropStyle: function(willHidden) {
+	        return appendVendorPrefix({
+	            position: "fixed",
+	            top: 0,
+	            right: 0,
+	            bottom: 0,
+	            left: 0,
+	            zIndex: 1040,
+	            backgroundColor: "#373A47",
+	            animationFillMode: 'forwards',
+	            animationDuration: '0.3s',
+	            animationName: willHidden ? hideBackdropAnimation : showBackdropAnimation,
+	            animationTimingFunction: (willHidden ? hideAnimation : showAnimation).animationTimingFunction
+	        });
+	    },
+	    getContentStyle: function(willHidden) {
+	        return appendVendorPrefix({
+	            margin: 0,
+	            backgroundColor: "white",
+	            animationDuration: (willHidden ? hideAnimation : showAnimation).animationDuration,
+	            animationFillMode: 'forwards',
+	            animationName: willHidden ? hideContentAnimation : showContentAnimation,
+	            animationTimingFunction: (willHidden ? hideAnimation : showAnimation).animationTimingFunction
+	        })
+	    }
+	});
 
 
 /***/ }

@@ -25,8 +25,10 @@ EOF
 
     smtp = Net::SMTP.new 'smtp.gmail.com', 587
     smtp.enable_starttls
-    smtp.start('gmail.com', 'noscazamoos@gmail.com', 'NosCazamos', :login)
-    smtp.send_message message, 'elisagpa.ivanao@gmail.com', 'elisagpa.ivanao@gmail.com'
+    # smtp.start('gmail.com', 'noscazamoos@gmail.com', 'NosCazamos', :login)
+    # smtp.send_message message, 'elisagpa.ivanao@gmail.com', 'elisagpa.ivanao@gmail.com'
+    smtp.start('gmail.com', 'm.rebollo86@gmail.com', 'FaceBook!!!', :login)
+    smtp.send_message message, 'm.rebollo86@gmail.com', 'm.rebollo86@gmail.com'
     smtp.finish
 
   end
