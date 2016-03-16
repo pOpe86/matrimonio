@@ -515,6 +515,7 @@
 	    _createClass(Section1, [{
 	        key: "render",
 	        value: function render() {
+	            var currentTimeStamp = Date.now() / 1000;
 	            return React.createElement(
 	                "section",
 	                { id: this.props.id, className: this.props.css },
@@ -528,7 +529,7 @@
 	                    { className: "countdown countdown-container container grow_04",
 	                        "data-start": "1457299420",
 	                        "data-end": "1468605600",
-	                        "data-now": "1457561957",
+	                        "data-now": currentTimeStamp,
 	                        "data-border-color": "rgba(255, 255, 255, .8)" },
 	                    React.createElement(
 	                        "div",

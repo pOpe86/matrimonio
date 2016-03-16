@@ -1,5 +1,6 @@
 export default class Section1 extends React.Component{
     render(){
+        var currentTimeStamp = Date.now() / 1000;
         return(
             <section id={this.props.id} className={this.props.css}>
                 <div className="contentHeader slowUp_1">
@@ -8,7 +9,7 @@ export default class Section1 extends React.Component{
                 <div className="countdown countdown-container container grow_04"
                      data-start="1457299420"
                      data-end="1468605600"
-                     data-now="1457561957"
+                     data-now={currentTimeStamp}
                      data-border-color="rgba(255, 255, 255, .8)">
                     <div className="clock row">
                         <div className="clock-item clock-days countdown-time-value col-sm-3 col-md-3">
