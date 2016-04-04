@@ -409,7 +409,7 @@
 	
 	var header2 = "HOW";
 	var subheader2 = "To get there";
-	var contentBody2Left = "Si no os apetece coger el coche habrá un servicio de autobuses desde la iglesia a la finca y posterior regreso a Madrid. Dispondréis de " + "dos horarios de vuelta. Por favor, reverva tu plaza en la sección de CONFIRMA!.";
+	var contentBody2Left = "Si no os apetece coger el coche habrá un servicio de autobuses desde la iglesia a la finca y posterior regreso a Madrid (1.30 y al final  " + "de la fiesta). Por favor, reserva tu plaza en la sección de CONFIRMA!.";
 	var contentBody2Right = "Si no queréis depender de los autobuses de vuelta, la finca os facilitará un servicio de taxis en la zona que os llevará de vuelta a " + "casa a la hora que queráis.";
 	var img2 = __webpack_require__(35);
 	var header3 = "Wedding";

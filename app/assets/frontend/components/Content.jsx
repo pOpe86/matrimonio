@@ -6,8 +6,8 @@ import Section5 from "./Section5"
 
 let header2 = "HOW";
 let subheader2 = "To get there";
-let contentBody2Left = "Si no os apetece coger el coche habr\u00e1 un servicio de autobuses desde la iglesia a la finca y posterior regreso a Madrid. Dispondr\u00e9is de "+
-    "dos horarios de vuelta. Por favor, reverva tu plaza en la secci\u00f3n de CONFIRMA!.";
+let contentBody2Left = "Si no os apetece coger el coche habr\u00e1 un servicio de autobuses desde la iglesia a la finca y posterior regreso a Madrid (1.30 y al final  "+
+    "de la fiesta). Por favor, reserva tu plaza en la secci\u00f3n de CONFIRMA!.";
 let contentBody2Right = "Si no quer\u00e9is depender de los autobuses de vuelta, la finca os facilitar\u00e1 un servicio de taxis en la zona que os llevar\u00e1 de vuelta a "+
     "casa a la hora que quer\u00e1is.";
 let img2 = require('../../images/ivanyelisa11.png');
