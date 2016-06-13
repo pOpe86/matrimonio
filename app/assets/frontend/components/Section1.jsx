@@ -7,7 +7,7 @@ export default class Section1 extends React.Component{
                     <img src={require('../../images/logo.png')} alt=""/>
                 </div>
                 <div className="countdown countdown-container container grow_04"
-                     data-start="1457299420"
+                     data-start="1465822240"
                      data-end="1468605600"
                      data-now={currentTimeStamp}
                      data-border-color="rgba(255, 255, 255, .8)">
